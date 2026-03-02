@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>İkra Oku - Premium Kur'an Okuyucu</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <style>
+        /* Gemini Tarzı Premium Dark Mode ve Tipografi */
+        :root {
+            --bg-color: #131314;
+            --surface-color: #1e1f20;
+            --text-primary: #e3e3e3;
+            --text-secondary: #c4c7c5;
+            --accent-color: #a8c7fa;
+            --border-color: #444746;
+            --base-font-size: 16px; /* Başlangıç font boyutu */
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            overflow-x: hidden; /* Sağa sola kaymayı kesin olarak engeller */
+        }
+
+        .container {
+            max-width: 800px; /* Ekranı kaplar ama çok geniş ekranlarda ortalar (Gemini gibi) */
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Üst Kontrol Çubuğu */
+        .toolbar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+            position: sticky;
+            top: 0;
+            background-color: rgba(19, 19, 20, 0.95);
+            padding: 15px 0;
+            z-index: 100;
+            border-bottom: 1px solid var(--border-color);
+            align-items: center;
+        }
+
+        .search-bar {
+            flex-grow: 1;
+            padding: 12px 15px;
+            border-radius: 24px;
+            border: 1px solid var(--border-color);
+            background-color: var(--surface-color);
+            color: var(--text-primary);
+            font-size: 1rem;
+            outline: none;
+        }
+
+        .search-bar:focus {
+            border-color: var(--accent-color);
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 5px;
+        }
+
+        button {
+            background-color: var(--surface-color);
+            color: var(--accent-color);
+            border: 1px solid var(--border-color);
+            padding: 8px 12px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 1rem;
+            transition: all 0.2s;
+        }
+
+        button:hover {
+            background-color: rgba(168, 199, 250, 0.08);
+        }
+
+        /* İçerik Kartları */
+        #icerikAlani {
+            font-size: var(--base-font-size);
+            transition: font-size 0.3s ease;
+        }
+
+        .ayet-karti {
+            background-color: var(--surface-color);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid transparent;
+        }
+
+        .ayet-baslik {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        .arapca-metin {
+            font-size: 1.5em; /* Arapça her zaman biraz daha büyük olmalı */
+            text-align: right;
+            margin-bottom: 15px;
+            direction: rtl;
+            line-height: 1.8;
+        }
+
+        .meal-metin {
+            font-size: 1.1em;
+            margin-bottom: 15px;
+            color: var(--text-primary);
+        }
+
+        .analiz-baslik {
+            color: var(--text-secondary);
+            font-size: 0.9em;
+            margin-top: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .analiz-metin {
+            color: var(--text-secondary);
+            font-size: 0.95em;
+            background: rgba(0,0,0,0.2);
+            padding: 10px;
+            border-radius: 6px;
+            margin-top: 5px;
+        }
+
+        .seslendir-btn {
+            background: transparent;
+            border: none;
+            color: var(--accent-color);
+            font-size: 1.2rem;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="toolbar">
+        <input type="text" id="aramaKutusu" class="search-bar" placeholder="Mealde veya analizde kelime ara..." onkeyup="aramaYap()">
+        <div class="btn-group">
+            <button onclick="fontDegistir(-2)">A-</button>
+            <button onclick="fontDegistir(2)">A+</button>
+        </div>
+        <button onclick="sureYukle('fatiha')">Fatiha Yükle</button>
+    </div>
+
+    <div id="icerikAlani">
+        <div style="text-align:center; color:#c4c7c5; margin-top:50px;">
+            Yüklemek için yukarıdan bir sure seçin...
+        </div>
+    </div>
+</div>
+
+<script>
+    // --- 1. HAYALET KİLİT MİMARİSİ (GÜVENLİK) ---
+    const sifreliKasa = "U2FsdGVkX18/lJl972BXHtLWMJtL4r5ElhRF+00ZZFXVZDaO6wDQYheXD+9RKs0e1aKkahcXFASdmf3EaLNafw==";
+    const gizliPin = "1453";
+
+    function getGitHubToken() {
+        try {
+            const bytes = CryptoJS.AES.decrypt(sifreliKasa, gizliPin);
+            const orijinalToken = bytes.toString(CryptoJS.enc.Utf8);
+            if (!orijinalToken) throw new Error("Pin yanlış veya veri bozuk.");
+            return orijinalToken;
+        } catch (e) {
+            console.error("Token çözme hatası:", e);
+            alert("Güvenlik hatası: Token çözülemedi!");
+            return null;
+        }
+    }
+
+    // --- 2. GITHUB API İLE KÖK DİZİNDEN JSON ÇEKME ---
+    const username = "fthlabz";
+    const repo = "igra-oku";
+    let aktifSureVerisi = []; // Aramalarda kullanmak için bellekte tutuyoruz
+
+    async function sureYukle(sureDosyaAdi) {
+        const icerikAlani = document.getElementById("icerikAlani");
+        icerikAlani.innerHTML = "<div style='text-align:center;'>Yükleniyor...</div>";
+        
+        const token = getGitHubToken();
+        if (!token) return;
+
+        // GitHub API ile raw (saf) içerik okuma URL'si
+        const url = `https://api.github.com/repos/${username}/${repo}/contents/${sureDosyaAdi}.json`;
+
+        try {
+            const response = await fetch(url, {
+                method: "GET",
+                headers: {
+                    "Authorization": `token ${token}`,
+                    "Accept": "application/vnd.github.v3.raw" // Base64 uğraşmamak için doğrudan saf veriyi ister
+                }
+            });
+
+            if (!response.ok) {
+                throw new Error(`HTTP Hata: ${response.status}`);
+            }
+
+            aktifSureVerisi = await response.json();
+            ekranaCiz(aktifSureVerisi);
+
+        } catch (error) {
+            console.error("Veri çekilemedi:", error);
+            icerikAlani.innerHTML = `<div style="color:red; text-align:center;">Hata: Veri çekilemedi. JSON formatınızı kontrol edin. (${error.message})</div>`;
+        }
+    }
+
+    // --- 3. EKRANA ÇİZDİRME VE GEMİNİ TARZI ARAYÜZ ---
+    function ekranaCiz(veriler) {
+        const icerikAlani = document.getElementById("icerikAlani");
+        icerikAlani.innerHTML = "";
+
+        veriler.forEach(ayet => {
+            const orijinal = ayet.analiz_modeli["1_orijinal_metin_ve_meal"];
+            const analiz = ayet.analiz_modeli["15_cagdas_izdusum"]; // Örnek olarak çağdaş izdüşümü de karta ekleyelim
+            
+            // Oku butonu için gönderilecek metin (Sadece meali okutuyoruz)
+            const okunacakMetin = orijinal.meal_diyanet.replace(/'/g, "\\'");
+
+            const kartHTML = `
+                <div class="ayet-karti" id="ayet-${ayet.ayet_no}">
+                    <div class="ayet-baslik">
+                        <span>${ayet.sure_adi} Suresi, ${ayet.ayet_no}. Ayet</span>
+                        <button class="seslendir-btn" onclick="sesliOku('${okunacakMetin}')" title="Meali Dinle">🔊</button>
+                    </div>
+                    <div class="arapca-metin">${orijinal.arapca}</div>
+                    <div class="meal-metin">${orijinal.meal_diyanet}</div>
+                    
+                    <div class="analiz-baslik">Çağdaş İzdüşüm</div>
+                    <div class="analiz-metin">${analiz ? analiz : 'Analiz yüklenemedi.'}</div>
+                </div>
+            `;
+            icerikAlani.innerHTML += kartHTML;
+        });
+    }
+
+    // --- 4. ARAMA MOTORU ---
+    function aramaYap() {
+        const aranan = document.getElementById("aramaKutusu").value.toLowerCase();
+        const kartlar = document.querySelectorAll(".ayet-karti");
+
+        kartlar.forEach(kart => {
+            const metin = kart.innerText.toLowerCase();
+            if (metin.includes(aranan)) {
+                kart.style.display = "block";
+            } else {
+                kart.style.display = "none";
+            }
+        });
+    }
+
+    // --- 5. FONT BÜYÜTME/KÜÇÜLTME ---
+    let guncelFontBoyutu = 16;
+    function fontDegistir(deger) {
+        guncelFontBoyutu += deger;
+        if (guncelFontBoyutu < 12) guncelFontBoyutu = 12; // Minimum limit
+        if (guncelFontBoyutu > 30) guncelFontBoyutu = 30; // Maksimum limit
+        document.documentElement.style.setProperty('--base-font-size', guncelFontBoyutu + 'px');
+    }
+
+    // --- 6. TELEFONUN/TARAYICININ KENDİ SESLENDİRME ÖZELLİĞİ (TTS) ---
+    function sesliOku(metin) {
+        if ('speechSynthesis' in window) {
+            // Varsa çalan sesi durdur
+            window.speechSynthesis.cancel(); 
+
+            const mesaj = new SpeechSynthesisUtterance(metin);
+            mesaj.lang = 'tr-TR'; // Türkçe okuması için
+            mesaj.rate = 0.9;     // Okuma hızı (biraz yavaş ve tane tane)
+            mesaj.pitch = 1;      // Ses tonu
+            
+            window.speechSynthesis.speak(mesaj);
+        } else {
+            alert("Tarayıcınız veya cihazınız sesli okuma özelliğini desteklemiyor.");
+        }
+    }
+</script>
+
+</body>
+</html>
