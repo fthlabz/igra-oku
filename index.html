@@ -22,12 +22,11 @@
             background-color: var(--bg-color); color: var(--text-primary);
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             margin: 0; padding: 0; line-height: 1.6; overflow-x: hidden; width: 100%;
-            padding-bottom: 80px;
         }
 
         .container { width: 100%; max-width: 800px; margin: 0 auto; padding: 15px; overflow-x: hidden; }
 
-        /* Üst Kontrol Çubuğu */
+        /* Üst Kontrol Çubuğu (Ana Ekran) */
         .toolbar {
             position: sticky; top: 0; background-color: rgba(19, 19, 20, 0.95);
             padding: 15px 0; z-index: 100; border-bottom: 1px solid var(--border-color);
@@ -63,12 +62,12 @@
         }
 
         /* Ana Ekran Kartları */
-        #icerikAlani { font-size: var(--base-font-size); transition: font-size 0.3s ease; width: 100%; }
+        #icerikAlani { font-size: var(--base-font-size); transition: font-size 0.3s ease; width: 100%; padding-bottom: 20px;}
         #detayGorunum { font-size: var(--base-font-size); transition: font-size 0.3s ease; display: none; width: 100%; }
 
         .ayet-karti {
             background-color: var(--surface-color); border-radius: 12px;
-            padding: 20px; margin-bottom: 20px; border: 1px solid transparent;
+            padding: 20px 20px 15px 20px; margin-bottom: 20px; border: 1px solid transparent;
             cursor: pointer; transition: transform 0.1s, border-color 0.2s;
             width: 100%; word-wrap: break-word;
         }
@@ -83,9 +82,36 @@
         .arapca-metin { font-size: 1.6em; text-align: right; margin-bottom: 15px; direction: rtl; line-height: 1.8; color: #fff;}
         .meal-metin { font-size: 1.1em; color: var(--text-primary); }
 
+        /* Yeni: Profesyonel Detay Butonu (Kart İçi) */
+        .kart-aksiyon {
+            margin-top: 20px; padding-top: 15px; border-top: 1px solid rgba(255,255,255,0.05);
+            display: flex; justify-content: space-between; align-items: center;
+            color: var(--accent-color); font-weight: 500; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.5px;
+        }
+        .kart-aksiyon .ikon { font-size: 1.2rem; transition: transform 0.2s; }
+        .ayet-karti:hover .kart-aksiyon .ikon { transform: translateX(5px); }
+
         .icon-btn { background: transparent; border: none; font-size: 1.5rem; padding: 5px; cursor: pointer; }
 
-        /* Detay Ekranı Stilleri */
+        /* Detay Ekranı Geri Dönüş Barları */
+        .detay-header-bar {
+            position: sticky; top: 0; background-color: rgba(19, 19, 20, 0.95);
+            backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+            padding: 15px 20px; z-index: 100; border-bottom: 1px solid var(--border-color);
+            display: flex; align-items: center; gap: 10px; color: var(--accent-color);
+            font-weight: bold; cursor: pointer; font-size: 1.1rem; margin-bottom: 20px;
+        }
+        .detay-footer-bar {
+            position: fixed; bottom: 0; left: 0; width: 100%;
+            background-color: rgba(30, 31, 32, 0.95); border-top: 1px solid rgba(255,255,255,0.1);
+            backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px);
+            padding: 15px; display: flex; justify-content: center; align-items: center;
+            color: var(--text-primary); cursor: pointer; font-weight: bold; z-index: 1000; font-size: 1.1rem;
+        }
+        .detay-header-bar:active, .detay-footer-bar:active { background-color: rgba(168, 199, 250, 0.1); }
+
+        /* Detay Ekranı İçerik Stilleri */
+        #detayIcerik { padding-bottom: 80px; padding-left: 15px; padding-right: 15px; } /* Footerın arkasında kalmaması için */
         .madde-kutu { margin-bottom: 20px; background: rgba(0,0,0,0.2); border-radius: 8px; padding: 15px; width: 100%; overflow-x: hidden; word-wrap: break-word;}
         .madde-baslik { color: var(--accent-color); font-weight: bold; border-bottom: 1px solid #333; padding-bottom: 5px; margin-bottom: 10px; text-transform: uppercase; font-size: 0.85em; letter-spacing: 0.5px;}
         .madde-icerik { color: var(--text-secondary); line-height: 1.7; }
@@ -105,17 +131,6 @@
         }
         @keyframes spin { to { transform: rotate(360deg); } }
 
-        /* Camsı (Glassmorphism) Sabit Geri Butonu */
-        .cam-geri-btn {
-            position: fixed; bottom: 25px; left: 50%; transform: translateX(-50%);
-            background: rgba(30, 31, 32, 0.7); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.1); color: var(--text-primary);
-            padding: 12px 30px; border-radius: 30px; font-size: 1.1rem; font-weight: 500;
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5); cursor: pointer; z-index: 1000;
-            display: none; align-items: center; gap: 8px; transition: background 0.2s;
-        }
-        .cam-geri-btn:active { background: rgba(30, 31, 32, 0.9); }
-
         /* Detay Sayfası Seslendirme Butonu */
         .tam-seslendir-btn {
             width: 100%; background: var(--accent-color); color: #131314; border: none;
@@ -127,24 +142,24 @@
 </head>
 <body>
 
-<div class="container">
-    <div class="toolbar" id="ustBar">
-        <div class="toolbar-top">
-            <input type="text" id="aramaKutusu" class="search-bar" placeholder="Örn: 1.2, Fatiha 2..." onkeypress="aramaTetikle(event)">
-            <div class="btn-group">
-                <button onclick="verileriGuncelle()" title="Veritabanını Yenile (Zorla Güncelle)">🔄</button>
-                <button onclick="fontDegistir(-2)">A-</button>
-                <button onclick="fontDegistir(2)">A+</button>
-            </div>
-        </div>
-        <select id="sureSecici" class="sure-secici" onchange="sureSecildi()">
-            <option value="" disabled selected>📖 İncelemek İstediğiniz Bölümü Seçin...</option>
-            <option value="fatiha">1. Fatiha Suresi (Tamamı)</option>
-            <option value="bakara_1_50">2. Bakara Suresi (1-50. Ayetler)</option>
-        </select>
-    </div>
-
+<div class="container" id="anaKapsayici">
     <div id="anaGorunum">
+        <div class="toolbar" id="ustBar">
+            <div class="toolbar-top">
+                <input type="text" id="aramaKutusu" class="search-bar" placeholder="Örn: 1.2, Fatiha 2..." onkeypress="aramaTetikle(event)">
+                <div class="btn-group">
+                    <button onclick="verileriGuncelle()" title="Veritabanını Yenile (Zorla Güncelle)">🔄</button>
+                    <button onclick="fontDegistir(-2)">A-</button>
+                    <button onclick="fontDegistir(2)">A+</button>
+                </div>
+            </div>
+            <select id="sureSecici" class="sure-secici" onchange="sureSecildi()">
+                <option value="" disabled selected>📖 İncelemek İstediğiniz Bölümü Seçin...</option>
+                <option value="fatiha">1. Fatiha Suresi (Tamamı)</option>
+                <option value="bakara_1_50">2. Bakara Suresi (1-50. Ayetler)</option>
+            </select>
+        </div>
+
         <div id="icerikAlani">
             <div style="text-align:center; color:#c4c7c5; margin-top:60px; font-size:1.1rem;">
                 Yukarıdan bir bölüm seçin veya ayet arayın.<br><br>
@@ -154,12 +169,17 @@
             </div>
         </div>
     </div>
+</div>
 
-    <div id="detayGorunum">
-        <button class="cam-geri-btn" id="geriBtn" onclick="geriDon()">
-            <span style="font-size:1.2rem;">⬅</span> Kapat & Geri Dön
-        </button>
-        <div id="detayIcerik"></div>
+<div id="detayGorunum">
+    <div class="detay-header-bar" onclick="geriDon()">
+        <span>⬅</span> Geri Dön
+    </div>
+    
+    <div class="container" id="detayIcerik"></div>
+    
+    <div class="detay-footer-bar" onclick="geriDon()">
+        <span>⬅ Listeye Geri Dön</span>
     </div>
 </div>
 
@@ -223,7 +243,7 @@
         if (!girdi) return;
 
         document.getElementById("aramaKutusu").blur();
-        document.getElementById("anaGorunum").style.display = "block";
+        document.getElementById("anaKapsayici").style.display = "block";
         document.getElementById("detayGorunum").style.display = "none";
         document.getElementById("icerikAlani").innerHTML = `<div class="loader-container"><div class="spinner"></div><div>Ayet Aranıyor...</div></div>`;
 
@@ -271,7 +291,7 @@
                 sureVerisi = await response.json();
                 localStorage.setItem(`sure_${dosyaAdi}`, JSON.stringify(sureVerisi));
             } catch (err) {
-                icerikAlani.innerHTML = `<div style="text-align:center; color:red; margin-top:30px;">Hata: İlgili JSON dosyası GitHub'da bulunamadı (${dosyaAdi}.json).</div>`;
+                icerikAlani.innerHTML = `<div style="text-align:center; color:red; margin-top:30px;">Hata: JSON dosyası GitHub'da bulunamadı (${dosyaAdi}.json).</div>`;
                 return;
             }
         }
@@ -287,7 +307,7 @@
     }
 
     async function sureYukle(dosyaAdi) {
-        document.getElementById("anaGorunum").style.display = "block";
+        document.getElementById("anaKapsayici").style.display = "block";
         document.getElementById("detayGorunum").style.display = "none";
         document.getElementById("aramaKutusu").value = "";
 
@@ -317,17 +337,15 @@
         }
     }
 
-    // --- ANA EKRAN KARTI ÇİZİMİ (KUŞ GİBİ HAFİF MİMARİ) ---
+    // --- ANA EKRAN KARTI ÇİZİMİ ---
     function ekranaCiz(veriler) {
         const icerikAlani = document.getElementById("icerikAlani");
         icerikAlani.innerHTML = "";
 
         veriler.forEach(ayet => {
             const orijinal = ayet.analiz_modeli["1_orijinal_metin_ve_meal"];
-            // Seslendirme butonu için tırnakları temizle (Kodun kırılmasını önler)
             const okunacakMetin = orijinal.meal_diyanet.replace(/'/g, "\\'").replace(/"/g, "");
 
-            // ARTIK VERİYİ HTML'E GÖMMÜYORUZ. Sadece ayet numarasını gönderiyoruz. Kuş gibi hafif!
             const kartHTML = `
                 <div class="ayet-karti" onclick="detayGoster(${ayet.ayet_no})">
                     <div class="ayet-baslik">
@@ -336,8 +354,10 @@
                     </div>
                     <div class="arapca-metin">${orijinal.arapca}</div>
                     <div class="meal-metin">${orijinal.meal_diyanet}</div>
-                    <div style="text-align:center; margin-top:15px; color:var(--accent-color); font-size:0.9em; opacity:0.8;">
-                        Detaylı analiz için dokunun 👆
+                    
+                    <div class="kart-aksiyon">
+                        <span>Detaylı Analizi İncele</span>
+                        <span class="ikon">➔</span>
                     </div>
                 </div>
             `;
@@ -347,23 +367,20 @@
 
     // --- DETAY EKRANINI GÖSTER (RAM'DEN ÇAĞIRIR) ---
     function detayGoster(ayetNo) {
-        // Ayeti doğrudan RAM'deki aktif diziden bulur. Asla hata vermez.
         const ayet = aktifSureVerisi.find(a => a.ayet_no == ayetNo);
         if(!ayet) return;
 
         const model = ayet.analiz_modeli;
         
-        document.getElementById("anaGorunum").style.display = "none";
-        document.getElementById("ustBar").style.display = "none";
+        document.getElementById("anaKapsayici").style.display = "none";
         document.getElementById("detayGorunum").style.display = "block";
-        document.getElementById("geriBtn").style.display = "flex"; 
         window.scrollTo(0,0); 
 
         const detayIcerik = document.getElementById("detayIcerik");
         mevcutAnalizMetni = `${ayet.sure_adi} suresi ${ayet.ayet_no}. ayet analizi. Orijinal arapçası. `;
         
         let html = `
-            <div class="ayet-baslik" style="font-size:1.3em; margin-top:20px; border-bottom:none;">
+            <div class="ayet-baslik" style="font-size:1.3em; border-bottom:none;">
                 ${ayet.sure_adi} Suresi, ${ayet.ayet_no}. Ayet
             </div>
             
@@ -434,9 +451,7 @@
     function geriDon() {
         if ('speechSynthesis' in window) { window.speechSynthesis.cancel(); } 
         document.getElementById("detayGorunum").style.display = "none";
-        document.getElementById("geriBtn").style.display = "none";
-        document.getElementById("anaGorunum").style.display = "block";
-        document.getElementById("ustBar").style.display = "flex"; 
+        document.getElementById("anaKapsayici").style.display = "block";
     }
 
     // --- FONT ---
