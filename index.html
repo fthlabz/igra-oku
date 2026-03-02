@@ -6,10 +6,7 @@
     <title>İkra Oku - Premium Kur'an Okuyucu</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
     <style>
-        /* Sağa sola taşmayı kesin olarak engelleyen CSS sıfırlaması */
-        *, *::before, *::after {
-            box-sizing: border-box;
-        }
+        *, *::before, *::after { box-sizing: border-box; }
 
         :root {
             --bg-color: #131314;
@@ -22,24 +19,13 @@
         }
 
         body {
-            background-color: var(--bg-color);
-            color: var(--text-primary);
+            background-color: var(--bg-color); color: var(--text-primary);
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            margin: 0; 
-            padding: 0; 
-            line-height: 1.6; 
-            overflow-x: hidden;
-            width: 100%;
+            margin: 0; padding: 0; line-height: 1.6; overflow-x: hidden; width: 100%;
             padding-bottom: 80px;
         }
 
-        .container { 
-            width: 100%;
-            max-width: 800px; 
-            margin: 0 auto; 
-            padding: 15px; 
-            overflow-x: hidden;
-        }
+        .container { width: 100%; max-width: 800px; margin: 0 auto; padding: 15px; overflow-x: hidden; }
 
         /* Üst Kontrol Çubuğu */
         .toolbar {
@@ -119,7 +105,7 @@
         }
         @keyframes spin { to { transform: rotate(360deg); } }
 
-        /* Şık, İnce, Camsı (Glassmorphism) Sabit Geri Butonu */
+        /* Camsı (Glassmorphism) Sabit Geri Butonu */
         .cam-geri-btn {
             position: fixed; bottom: 25px; left: 50%; transform: translateX(-50%);
             background: rgba(30, 31, 32, 0.7); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
@@ -155,7 +141,7 @@
             <option value="" disabled selected>📖 İncelemek İstediğiniz Bölümü Seçin...</option>
             <option value="fatiha">1. Fatiha Suresi (Tamamı)</option>
             <option value="bakara_1_50">2. Bakara Suresi (1-50. Ayetler)</option>
-            </select>
+        </select>
     </div>
 
     <div id="anaGorunum">
@@ -178,7 +164,7 @@
 </div>
 
 <script>
-    // --- 1. HAYALET KİLİT (GÜVENLİK) ---
+    // --- HAYALET KİLİT (GÜVENLİK) ---
     const sifreliKasa = "U2FsdGVkX18/lJl972BXHtLWMJtL4r5ElhRF+00ZZFXVZDaO6wDQYheXD+9RKs0e1aKkahcXFASdmf3EaLNafw==";
     const gizliPin = "1453";
 
@@ -192,30 +178,27 @@
     let aktifSureVerisi = []; 
     let mevcutAnalizMetni = ""; 
 
-    // --- YENİLEME / GÜNCELLEME BUTONU İŞLEVİ ---
+    // --- YENİLEME / GÜNCELLEME ---
     function verileriGuncelle() {
         for (let key in localStorage) {
             if (key.startsWith("sure_")) {
                 localStorage.removeItem(key);
             }
         }
-        
         const secilenDosya = document.getElementById("sureSecici").value;
         if(secilenDosya) {
-            sureYukle(secilenDosya); // Seçili olanı internetten taze çek
+            sureYukle(secilenDosya); 
         } else {
             alert("Sistem hafızası temizlendi. İndirmek istediğiniz dosyayı seçebilirsiniz.");
             document.getElementById("icerikAlani").innerHTML = `<div style="text-align:center; margin-top:50px;">Hafıza temizlendi. Lütfen bir bölüm seçin.</div>`;
         }
     }
 
-    // Açılır Menü Tetikleyici
     function sureSecildi() {
         const secilen = document.getElementById("sureSecici").value;
         if(secilen) sureYukle(secilen);
     }
 
-    // Dosya Adı / Ayet Numarası Zekası (Arama Motoru İçin)
     function dosyaBul(sureAdi, ayetNo) {
         if (sureAdi === "1" || sureAdi === "fatiha") return "fatiha";
         if (sureAdi === "2" || sureAdi === "bakara") {
@@ -260,7 +243,6 @@
                 document.getElementById("icerikAlani").innerHTML = `<div style="text-align:center; color:red; margin-top:30px;">Bu ayet aralığı henüz sisteme eklenmemiş.</div>`;
             }
         } else {
-            // Sadece menüden seçilmiş olan mevcut dosyada kelime araması yap
             if (aktifSureVerisi.length > 0) {
                 const kartlar = document.querySelectorAll("#icerikAlani .ayet-karti");
                 kartlar.forEach(kart => {
@@ -274,7 +256,6 @@
         }
     }
 
-    // Dosyayı çek ve sadece istenen ayeti bas
     async function tekAyetGetir(dosyaAdi, ayetNo) {
         const icerikAlani = document.getElementById("icerikAlani");
         let sureVerisi = localStorage.getItem(`sure_${dosyaAdi}`);
@@ -297,15 +278,14 @@
 
         const arananAyet = sureVerisi.find(a => a.ayet_no == ayetNo);
         if (arananAyet) {
-            aktifSureVerisi = sureVerisi; // Aramalar düzgün çalışsın diye bellekte tut
-            document.getElementById("sureSecici").value = dosyaAdi; // Menüyü de aranan dosyaya ayarla
+            aktifSureVerisi = sureVerisi; 
+            document.getElementById("sureSecici").value = dosyaAdi; 
             ekranaCiz([arananAyet]); 
         } else {
             icerikAlani.innerHTML = `<div style="text-align:center; color:red; margin-top:30px;">Ayet bulunamadı.</div>`;
         }
     }
 
-    // Bütün bölümü çek ve bas
     async function sureYukle(dosyaAdi) {
         document.getElementById("anaGorunum").style.display = "block";
         document.getElementById("detayGorunum").style.display = "none";
@@ -337,18 +317,19 @@
         }
     }
 
-    // --- ANA EKRAN KARTI ÇİZİMİ ---
+    // --- ANA EKRAN KARTI ÇİZİMİ (KUŞ GİBİ HAFİF MİMARİ) ---
     function ekranaCiz(veriler) {
         const icerikAlani = document.getElementById("icerikAlani");
         icerikAlani.innerHTML = "";
 
         veriler.forEach(ayet => {
             const orijinal = ayet.analiz_modeli["1_orijinal_metin_ve_meal"];
-            const okunacakMetin = orijinal.meal_diyanet.replace(/'/g, "\\'");
-            const strAyet = encodeURIComponent(JSON.stringify(ayet));
+            // Seslendirme butonu için tırnakları temizle (Kodun kırılmasını önler)
+            const okunacakMetin = orijinal.meal_diyanet.replace(/'/g, "\\'").replace(/"/g, "");
 
+            // ARTIK VERİYİ HTML'E GÖMMÜYORUZ. Sadece ayet numarasını gönderiyoruz. Kuş gibi hafif!
             const kartHTML = `
-                <div class="ayet-karti" onclick="detayGoster(this)" data-ayet='${strAyet}'>
+                <div class="ayet-karti" onclick="detayGoster(${ayet.ayet_no})">
                     <div class="ayet-baslik">
                         <span>${ayet.sure_adi} Suresi, ${ayet.ayet_no}. Ayet</span>
                         <button class="icon-btn" onclick="event.stopPropagation(); kisaSesliOku('${okunacakMetin}')" title="Sadece Meali Dinle">🔊</button>
@@ -364,9 +345,12 @@
         });
     }
 
-    // --- DETAY EKRANINI GÖSTER (15 MADDE) ---
-    function detayGoster(element) {
-        const ayet = JSON.parse(decodeURIComponent(element.getAttribute('data-ayet')));
+    // --- DETAY EKRANINI GÖSTER (RAM'DEN ÇAĞIRIR) ---
+    function detayGoster(ayetNo) {
+        // Ayeti doğrudan RAM'deki aktif diziden bulur. Asla hata vermez.
+        const ayet = aktifSureVerisi.find(a => a.ayet_no == ayetNo);
+        if(!ayet) return;
+
         const model = ayet.analiz_modeli;
         
         document.getElementById("anaGorunum").style.display = "none";
