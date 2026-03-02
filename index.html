@@ -24,7 +24,7 @@
             margin: 0;
             padding: 0;
             line-height: 1.6;
-            overflow-x: hidden; /* Sağa sola kaymayı kesin olarak engeller */
+            overflow-x: hidden; 
         }
 
         .container {
@@ -36,8 +36,8 @@
         /* Üst Kontrol Çubuğu */
         .toolbar {
             display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
+            flex-direction: column;
+            gap: 12px;
             margin-bottom: 20px;
             position: sticky;
             top: 0;
@@ -45,7 +45,12 @@
             padding: 15px 0;
             z-index: 100;
             border-bottom: 1px solid var(--border-color);
-            align-items: center;
+        }
+
+        .toolbar-top {
+            display: flex;
+            gap: 10px;
+            width: 100%;
         }
 
         .search-bar {
@@ -63,7 +68,7 @@
 
         .btn-group { display: flex; gap: 5px; }
 
-        button {
+        button, select {
             background-color: var(--surface-color);
             color: var(--accent-color);
             border: 1px solid var(--border-color);
@@ -73,9 +78,20 @@
             font-weight: 500;
             font-size: 1rem;
             transition: all 0.2s;
+            outline: none;
         }
 
-        button:hover { background-color: rgba(168, 199, 250, 0.08); }
+        select {
+            width: 100%;
+            padding: 12px 15px;
+            appearance: none; /* Varsayılan ok işaretini gizle */
+            background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23a8c7fa%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.4-12.8z%22%2F%3E%3C%2Fsvg%3E");
+            background-repeat: no-repeat;
+            background-position: right 15px top 50%;
+            background-size: 12px auto;
+        }
+
+        button:hover, select:hover { background-color: rgba(168, 199, 250, 0.08); }
 
         /* Ana Ekran Kartları */
         #icerikAlani { font-size: var(--base-font-size); transition: font-size 0.3s ease; }
@@ -87,11 +103,11 @@
             padding: 20px;
             margin-bottom: 20px;
             border: 1px solid transparent;
-            cursor: pointer; /* Tıklanabilir el işareti */
+            cursor: pointer; 
             transition: transform 0.1s, border-color 0.2s;
         }
 
-        .ayet-karti:active { transform: scale(0.98); } /* Tıklama efekti */
+        .ayet-karti:active { transform: scale(0.98); } 
         .ayet-karti:hover { border-color: var(--border-color); }
 
         .ayet-baslik {
@@ -115,7 +131,7 @@
 
         .meal-metin { font-size: 1.1em; color: var(--text-primary); }
 
-        .seslendir-btn { background: transparent; border: none; font-size: 1.2rem; padding: 5px; }
+        .seslendir-btn { background: transparent; border: none; font-size: 1.2rem; padding: 5px; cursor: pointer; }
 
         /* Detay Ekranı Stilleri */
         .geri-btn { margin-bottom: 20px; display: inline-flex; align-items: center; gap: 8px; font-weight: bold; }
@@ -130,24 +146,43 @@
         .lafzi-arapca { color: var(--accent-color); font-size: 1.2em; direction: rtl; }
         .lafzi-turkce { color: var(--text-primary); }
 
+        /* Yükleniyor Animasyonu */
+        .loader-container { text-align: center; color: var(--accent-color); margin-top: 50px; font-weight: 500; }
+        .spinner {
+            display: inline-block;
+            width: 30px; height: 30px;
+            border: 3px solid rgba(168, 199, 250, 0.3);
+            border-radius: 50%;
+            border-top-color: var(--accent-color);
+            animation: spin 1s ease-in-out infinite;
+            margin-bottom: 10px;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+
     </style>
 </head>
 <body>
 
 <div class="container">
     <div class="toolbar">
-        <input type="text" id="aramaKutusu" class="search-bar" placeholder="Meal veya ayet ara..." onkeyup="aramaYap()">
-        <div class="btn-group">
-            <button onclick="fontDegistir(-2)">A-</button>
-            <button onclick="fontDegistir(2)">A+</button>
+        <div class="toolbar-top">
+            <input type="text" id="aramaKutusu" class="search-bar" placeholder="Meal veya ayet ara..." onkeyup="aramaYap()">
+            <div class="btn-group">
+                <button onclick="fontDegistir(-2)">A-</button>
+                <button onclick="fontDegistir(2)">A+</button>
+            </div>
         </div>
-        <button onclick="sureYukle('fatiha')">Fatiha Yükle</button>
+        <select id="sureSecici" onchange="sureSecildi()">
+            <option value="" disabled selected>📖 İncelemek İstediğiniz Sureyi Seçin...</option>
+            <option value="fatiha">1. Fatiha Suresi</option>
+            <option value="bakara">2. Bakara Suresi</option>
+            </select>
     </div>
 
     <div id="anaGorunum">
         <div id="icerikAlani">
             <div style="text-align:center; color:#c4c7c5; margin-top:50px;">
-                Yüklemek için yukarıdan bir sure seçin...
+                Yüklemek için yukarıdaki menüden bir sure seçin...
             </div>
         </div>
     </div>
@@ -175,20 +210,44 @@
         }
     }
 
-    // --- 2. GITHUB API İLE VERİ ÇEKME ---
+    // --- 2. GITHUB API & LOCAL STORAGE (YEREL HAFIZA) MANTIK ---
     const username = "fthlabz";
     const repo = "igra-oku";
     let aktifSureVerisi = []; 
 
+    function sureSecildi() {
+        const secilenSure = document.getElementById("sureSecici").value;
+        if(secilenSure) {
+            sureYukle(secilenSure);
+        }
+    }
+
     async function sureYukle(sureDosyaAdi) {
-        // Her yüklemede ana ekrana geç ve arama kutusunu temizle
         document.getElementById("anaGorunum").style.display = "block";
         document.getElementById("detayGorunum").style.display = "none";
         document.getElementById("aramaKutusu").value = "";
 
         const icerikAlani = document.getElementById("icerikAlani");
-        icerikAlani.innerHTML = "<div style='text-align:center;'>Yükleniyor...</div>";
         
+        // Şık Yükleniyor Animasyonu
+        icerikAlani.innerHTML = `
+            <div class="loader-container">
+                <div class="spinner"></div>
+                <div>Yükleniyor, lütfen bekleyiniz...</div>
+            </div>`;
+        
+        // 1. ADIM: Önce Telefonun Yerel Hafızasına (LocalStorage) Bak
+        const yerelVeri = localStorage.getItem(`sure_${sureDosyaAdi}`);
+        
+        if (yerelVeri) {
+            // Eğer daha önce indirilmişse, internete hiç çıkmadan saniyesinde burdan aç
+            console.log("Veri yerel hafızadan (cache) yüklendi.");
+            aktifSureVerisi = JSON.parse(yerelVeri);
+            ekranaCiz(aktifSureVerisi);
+            return; // İşlemi burada kes, GitHub'a gitme
+        }
+
+        // 2. ADIM: Hafızada Yoksa GitHub'dan Çek
         const token = getGitHubToken();
         if (!token) { icerikAlani.innerHTML = "Güvenlik Hatası!"; return; }
 
@@ -206,14 +265,19 @@
             if (!response.ok) throw new Error(`HTTP Hata: ${response.status}`);
 
             aktifSureVerisi = await response.json();
+            
+            // 3. ADIM: İnternetten çektiğin bu dev veriyi Telefonun Hafızasına Kaydet
+            localStorage.setItem(`sure_${sureDosyaAdi}`, JSON.stringify(aktifSureVerisi));
+            console.log("Veri GitHub'dan çekildi ve telefona kaydedildi.");
+
             ekranaCiz(aktifSureVerisi);
 
         } catch (error) {
-            icerikAlani.innerHTML = `<div style="color:red; text-align:center;">Hata: Veri çekilemedi. JSON formatınızı kontrol edin. (${error.message})</div>`;
+            icerikAlani.innerHTML = `<div style="color:red; text-align:center; margin-top:50px;">Hata: Veri çekilemedi. Henüz bu surenin JSON dosyası GitHub'da yok veya formatı hatalı. (${error.message})</div>`;
         }
     }
 
-    // --- 3. ANA EKRAN KARTLARINI ÇİZ (Sadece Arapça ve Meal) ---
+    // --- 3. ANA EKRAN KARTLARINI ÇİZ ---
     function ekranaCiz(veriler) {
         const icerikAlani = document.getElementById("icerikAlani");
         icerikAlani.innerHTML = "";
@@ -222,8 +286,6 @@
             const orijinal = ayet.analiz_modeli["1_orijinal_metin_ve_meal"];
             const okunacakMetin = orijinal.meal_diyanet.replace(/'/g, "\\'");
 
-            // Kartın geneline tıklanabilirlik veriyoruz onclick="detayGoster(index)"
-            // Ancak ses butonuna tıklandığında detaya gitmemesi için event.stopPropagation() ekliyoruz.
             const kartHTML = `
                 <div class="ayet-karti" onclick="detayGoster(${index})">
                     <div class="ayet-baslik">
@@ -245,11 +307,10 @@
         
         document.getElementById("anaGorunum").style.display = "none";
         document.getElementById("detayGorunum").style.display = "block";
-        window.scrollTo(0,0); // Detaya girince ekranı en tepeye kaydır
+        window.scrollTo(0,0); 
 
         const detayIcerik = document.getElementById("detayIcerik");
         
-        // 1. Orijinal Metin
         let html = `
             <div class="ayet-baslik" style="font-size:1.2em; margin-top:10px;">
                 ${ayet.sure_adi} Suresi, ${ayet.ayet_no}. Ayet Detaylı Analizi
@@ -260,7 +321,6 @@
             </div>
         `;
 
-        // 2. Lafzi Çeviri Tablosu
         if(model["2_lafzi_ceviri"] && Object.keys(model["2_lafzi_ceviri"]).length > 0) {
             html += `<div class="madde-kutu"><div class="madde-baslik">Lafzî (Kelime Kelime) Çeviri</div><div class="madde-icerik">`;
             for (let arapcaKelime in model["2_lafzi_ceviri"]) {
@@ -273,7 +333,6 @@
             html += `</div></div>`;
         }
 
-        // Diğer Maddeleri Başlıklarıyla Sırayla Yazdırma Haritası
         const baslikHaritası = {
             "3_morfolojik_ve_sentaktik_cozumleme": "3. Morfolojik ve Sentaktik Çözümleme",
             "4_kiraat_farkliliklari": "4. Kıraat Farklılıkları",
@@ -293,7 +352,6 @@
         for (let key in baslikHaritası) {
             if (model[key]) {
                 let icerik = "";
-                // Siyak ve Sibak bazen nesne olabiliyor (önceki_ayetler, sonraki_ayetler, baglam_analizi)
                 if(typeof model[key] === 'object' && key === "8_siyak_ve_sibak_baglam") {
                     icerik = `<strong>Önceki Ayetler:</strong> ${model[key].onceki_ayetler || 'Yok'}<br>
                               <strong>Sonraki Ayetler:</strong> ${model[key].sonraki_ayetler || 'Yok'}<br><br>
@@ -319,9 +377,9 @@
         document.getElementById("anaGorunum").style.display = "block";
     }
 
-    // --- 6. ARAMA MOTORU (Ana Ekran) ---
+    // --- 6. ARAMA MOTORU ---
     function aramaYap() {
-        if(document.getElementById("anaGorunum").style.display === "none") return; // Detaydayken arama kapalı
+        if(document.getElementById("anaGorunum").style.display === "none") return; 
 
         const aranan = document.getElementById("aramaKutusu").value.toLowerCase();
         const kartlar = document.querySelectorAll("#icerikAlani .ayet-karti");
