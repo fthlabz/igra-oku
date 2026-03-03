@@ -1,1 +1,119 @@
-
+[
+  {
+    "sure_no": 2,
+    "sure_adi": "Bakara",
+    "ayet_no": 51,
+    "cuz_no": 1,
+    "analiz_modeli": {
+      "1_orijinal_metin_ve_meal": {
+        "arapca": "وَإِذْ وَاعَدْنَا مُوسَىٰ أَرْبَعِينَ لَيْلَةً ثُمَّ اتَّخَذْتُمُ الْعِجْلَ مِنْ بَعْدِهِ وَأَنْتُمْ ظَالِمُونَ",
+        "meal_diyanet": "Hani Mûsâ ile kırk gece için sözleşmiştik de, siz onun (Tûr'a gitmesinin) ardından kendinize zulmederek buzağıyı (ilah) edinmiştiniz."
+      },
+      "2_lafzi_ceviri": {
+        "وَإِذْ": "Ve hani (o vakit)",
+        "وَاعَدْنَا": "Sözleşmiştik",
+        "مُوسَىٰ": "Musa ile",
+        "أَرْبَعِينَ لَيْلَةً": "Kırk gece",
+        "ثُمَّ": "Sonra",
+        "اتَّخَذْتُمُ": "Edindiniz / tuttunuz",
+        "الْعِجْلَ": "O buzağıyı (ilah olarak)",
+        "مِنْ بَعْدِهِ": "Onun ardından (Musa gittikten sonra)",
+        "وَأَنْتُمْ": "Halbuki siz (o durumda)",
+        "ظَالِمُونَ": "Zalimler(diniz)"
+      },
+      "3_morfolojik_ve_sentaktik_cozumleme": "'Vâ'adnâ' (Sözleşmiştik), Müfâale babından mazi bir fiildir. Bu bab 'karşılıklı eylem' ifade eder; yani Allah ile Musa arasında vahyin inzal edileceği özel ve randevulu bir zaman dilimi ayarlandığını gösterir. 'İttehaztüm' (Edindiniz/Tuttunuz) İfti'al babındandır, bir şeyi zorla, büyük bir çaba ve hırsla benimsemek manası katar. Arapçada 'İlah edindiniz' kelimesi geçmez, sadece 'Buzağıyı edindiniz' denir; çünkü buzağının yanına ilah kelimesini koymak bile gramatikal olarak o cisme haksız bir paye vermek sayılmıştır (Hazf sanatı).",
+      "4_kiraat_farkliliklari": "Ebu Amr ve Ya'kub gibi bazı kıraat imamları 'Vâ'adnâ' (sözleştik) fiilini, elifsiz olarak 'Va'adnâ' (Vaat ettik) şeklinde okumuşlardır. Birinci okuyuş karşılıklı sözleşmeyi, ikinci okuyuş ise Allah'ın tek taraflı vaadini (lütfunu) vurgular.",
+      "5_etimolojik_cozumleme_ve_cahiliye_referanslari": "'İcl' (Buzağı), Arapçada 'Acele' (A-C-L) kökünden gelir. Yeni doğmuş, hızlı koşan, hoplayıp zıplayan inek yavrusudur. İsrailoğulları, görünmeyen (soyut) bir Tanrı fikrini sabırla bekleyemedikleri, somut bir heykeli hemen ve aceleyle görmek istedikleri için etimolojik olarak tam da ruh hallerine uygun bir puta (aceleci buzağıya) tapmışlardır. Kırk gece (Erba'îne leyleh) ise insanın manevi bir olgunluğa (çileye/inzivaya) ermesi için gereken sembolik bir rakamdır.",
+      "6_kuran_ici_kavram_agi": "Buzağı (İcl) krizi, Tâhâ Suresi 83-91. ayetlerde ve A'râf 148-152'de çok daha detaylı anlatılır. Sâmirî adlı karakterin altınları eritip rüzgardan ses çıkaran mekanik bir heykel yapması ve halkın 'Musa'nın Tanrısı buydu ama o unuttu' diyerek ona tapması, Kur'an'ın 'Şirk' kavramını tanımladığı en somut tarihsel vakadır.",
+      "7_esbab_i_nuzul_ve_tarihsel_baglam": "Ayet, 50. ayetteki 'Denizin yarılması' mucizesinin hemen sonrasına ait şok edici bir tablodur. Denizi yaran ve gözleri önünde Firavun'u boğan Allah'a şükretmeleri gereken kavim, Hz. Musa Tûr dağına (Tevrat'ı/Levhaları almaya) gidip sadece birkaç gün gecikince, Mısır'daki eski kölelik günlerinin alışkanlığına (Mısır'ın Apis öküzü / Hathor inancı) geri dönmüş ve altınlarını eriterek bir puta tapmışlardır.",
+      "8_siyak_ve_sibak_baglam": {
+        "onceki_ayetler": "2/50: Denizin yarılması ve muazzam kurtuluş mucizesi.",
+        "sonraki_ayetler": "2/52: Bu büyük şirke/ihanete rağmen Allah'ın onları affetmesi.",
+        "baglam_analizi": "50. ayette ilahi yardım (Lütuf) zirvedeydi. 51. ayette insan nankörlüğü (Nimetin inkarı) zirveye çıkar. Kur'an, insan psikolojisinin mucizelerle bile kalıcı bir hidayete eremeyeceğini, bilincin (Takva) ne kadar kolay dağılabileceğini gösterir. Ancak hikaye burada bitmez; 52. ayette bu korkunç ihânete rağmen Yaratıcının 'Af' ve merhamet kapasitesinin sınırsızlığı ilan edilecektir."
+      },
+      "9_belagat_ve_edebi_nazim": "'Siz o durumdayken zalimlerdiniz' (Ve entüm zâlimûn) ifadesi bir durum (hal) cümlesidir. Belâgatta bu, 'Cehaletle veya bilmeyerek değil; o heykelin bir metal yığını olduğunu, size ne fayda ne de zarar veremeyeceğini bile bile kendi mantığınıza ve fıtratınıza zulmettiniz' anlamına gelen bir tasvirdir.",
+      "10_fonetik_ve_akustik_analiz": "'Sümmettehaztümül-İcl' (Sonra o buzağıyı edindiniz) geçerken, kelimelerdeki Tâ (ت), Zâl (ذ) ve Cîm (ج) harflerinin birbirine karışık, sıkışık ve zor söylenişi; o altını ateşte eritip çekiçlerle döverken çıkardıkları o kaotik, gürültülü, şizofrenik ve yozlaşmış pagan ayininin akustik ritmini verir.",
+      "11_tematik_capraz_okuma": "A'râf 148: 'Musa'nın ardından kavmi, ziynet eşyalarından, böğürme sesi çıkaran bir buzağı heykeli yaptılar. Onun kendileriyle konuşmadığını ve onlara yol göstermediğini görmediler mi?' Somut maddeye tapan aklın felsefi çöküşü çaprazlanır.",
+      "12_klasik_tefsir_perspektifi": "Müfessir Râzî şöyle der: 'Neden Kırk Gecelik randevu kırk gün denmedi de gece dendi? Çünkü vahyin asıl inzal olduğu, ruhun dünyadan koptuğu ve feyzin aktığı an gecedir.' Ayrıca Râzî, İsrailoğullarının denizi geçtikten sonra neden hemen puta taptığını şöyle açıklar: 'Onlar yıllarca Firavun'un putlarına baka baka, görselliğe (maddeye) o kadar alışmışlardı ki, kalpleri soyut bir Tanrı'yı (Tevhidi) kavrayacak o entelektüel olgunluğa henüz ulaşmamıştı.'",
+      "13_ontolojik_ve_metafizik_okuma": "Materyalizmin (Maddeciliğin) İlahlaştırılması. İnsan zihni, eğer ontolojik olarak eğitilmezse, gözüyle görmediği 'Aşkın/Müteal' (Transcendental) bir varlığa inanmaktansa, kendi elleriyle ürettiği, dokunabildiği 'İçkin/Maddi' (İmmanent) bir varlığa (altına/metale) tapmayı tercih eder. 'Altın Buzağı', insanın ruhani yükselişi reddedip, kapitalizmin ve somut materyalizmin konforlu yozlaşmışlığına teslimiyetidir. Buzağı, paranın (altının) putlaşmış halidir.",
+      "14_hukuki_ve_ahlaki_cikarimlar": "Şirkin Ahlaki Tanımı. Şirk, Allah'ı tamamen inkar etmek (Ateizm) değildir. İsrailoğulları Allah'ı biliyordu; ancak O'nun otoritesinin yanına (veya sembolü olarak) dokunabilecekleri bir aracı/nesne koymak istediler. Hukuken ve ahlaken, Allah'ın gücünü nesnelere (paraya, altına, teknolojiye, heykellere) atfetmek (Zulüm) en büyük ontolojik sapmadır.",
+      "15_cagdas_izdusum": "Ayet, bugün 'Altın Buzağı' metaforuyla bilinen küresel kapitalizmin, borsa putlarının (Wall Street'in sembolü olan Charging Bull - Altın Boğa heykeli gibi) ve tüketim çılgınlığının 14 asır önceki MR'ıdır. Modern insan da tıpkı İsrailoğulları gibi manevi boşluğunu (Musa'nın/Vahyin eksikliğini) hemen yeni model telefonlarla, lüks markalarla ve 'görsel/dokunsal' tüketim nesneleriyle (yeni altın buzağılarla) doldurarak 'gönüllü bir köleliğe (zulme)' geri dönmektedir."
+    }
+  },
+  {
+    "sure_no": 2,
+    "sure_adi": "Bakara",
+    "ayet_no": 52,
+    "cuz_no": 1,
+    "analiz_modeli": {
+      "1_orijinal_metin_ve_meal": {
+        "arapca": "ثُمَّ عَفَوْنَا عَنْكُمْ مِنْ بَعْدِ ذَٰلِكَ لَعَلَّكُمْ تَشْكُرُونَ",
+        "meal_diyanet": "Bütün bunlardan sonra, belki şükredersiniz diye sizi yine de affettik."
+      },
+      "2_lafzi_ceviri": {
+        "ثُمَّ": "Sonra",
+        "عَفَوْنَا": "Sizi affettik",
+        "عَنْكُمْ": "Sizden (günahınızı sildik)",
+        "مِنْ بَعْدِ": "Ardından",
+        "ذَٰلِكَ": "Bunun / bu olaydan sonra",
+        "لَعَلَّكُمْ": "Umulur ki siz / -meniz için",
+        "تَشْكُرُونَ": "Şükredersiniz"
+      },
+      "3_morfolojik_ve_sentaktik_cozumleme": "'Sümme' (Sonra) atıf harfi, buzağıya tapma eylemi (şirk) ile ilahi af arasındaki kronolojik geçişi sağlar. 'Afevnâ' (Affettik) mazi fiili 'Afv' kökündendir ve Allah'ın azamet (Biz) zamiriyle gelmiştir. 'Min ba'di zâlik' (Bundan sonra) ifadesindeki 'zâlike' (şu/bu) ism-i işareti, 51. ayetteki o devasa şirk suçuna işaret eder; yani 'suçun boyutu ne kadar büyük olursa olsun affın gerçekleştiğini' vurgular. 'Lealleküm teşkurûn' ise af eyleminin anlamsız bir tolerans değil, ahlaki bir uyanış/şükür hedefine (ta'lîl) matuf olduğunu gramatikal olarak belgeler.",
+      "4_kiraat_farkliliklari": "Okunuşta farklılık bulunmamaktadır. Ayetin geneli, ilahi merhametin yumuşaklığını ve kucaklayıcılığını yansıtacak sükunetli bir tecvid tonlamasıyla okunur.",
+      "5_etimolojik_cozumleme_ve_cahiliye_referanslari": "'Afv' kelimesi Arapçada sadece 'bağışlamak' değil; şiddetli bir rüzgarın eserek çöldeki ayak izlerini tamamen silip süpürmesi, yeryüzünü dümdüz ve pürüzsüz hale getirmesi (İz bırakmaması) demektir. Yani Allah, onların buzağıya tapma suçunu sadece bir kenara bırakmamış, o suçun kalpteki ve sicildeki 'İzlerini' de silip süpürerek fıtratlarını sıfırlamıştır. 'Şükür' ise, verilen nimeti bilmek, itiraf etmek ve onu verenin yolunda kullanmaktır.",
+      "6_kuran_ici_kavram_agi": "Kur'an'da 'Şirk' (Allah'a ortak koşmak) en büyük ve affedilmez günah (Nisa 48) olarak belirtilir. Ancak bu kural 'Ölmeden/Tövbe etmeden önce' geçerlidir. Bu ayet gösteriyor ki, dünyadayken yapılan en büyük şirk (buzağıya tapmak) bile eğer samimi bir dönüş (veya ilahi lütuf) varsa, 'Afv' rüzgarıyla tamamen silinebilir (Zümer 53: Allah bütün günahları bağışlar).",
+      "7_esbab_i_nuzul_ve_tarihsel_baglam": "İsrailoğulları Musa (a.s) Tur'dan dönüp heykeli yaktığında büyük bir pişmanlık duydular. Tevrat ve Kur'an geleneğine göre (Bakara 54'te detaylandırılacak) içlerinden şirke girmeyenler, şirke girenleri (veya isyanın başını çekenleri) cezalandırdıktan sonra Allah'ın umumi affı tecelli etmiştir. Bu ayet, Medine'deki Yahudilere 'Geçmişte atalarınız o kadar büyük bir şirk işlediğinde bile onları kökten yok etmedik, sildik. O halde siz de bugün inat etmeyin' mesajı verir.",
+      "8_siyak_ve_sibak_baglam": {
+        "onceki_ayetler": "2/51: Denizi geçtikten hemen sonra nankörce buzağıya tapılması.",
+        "sonraki_ayetler": "2/53: Şükretsinler ve yollarını bulsunlar diye Musa'ya Furkan'ın verilmesi.",
+        "baglam_analizi": "51'de ihanet ve suç zirvedeydi. Klasik insan aklı, bu nankörlüğün üzerine gökten bir yıldırım inmesini ve hepsinin helak edilmesini beklerdi. Ancak 52. ayet, İlahi Adaletin üzerine çıkan İlahi Merhametin (Afv) sahneye girişidir. Suç bağışlanmış, 53. ayette ise bu affın sadece soyut bir kavram olarak kalmaması için ellerine bir 'Anayasa/Furkan' tutuşturularak sisteme dahil edileceklerdir."
+      },
+      "9_belagat_ve_edebi_nazim": "'Zâlike' (Bu/Şu) işaret zamiriyle yapılan 'İcâz' (kısaltma) sanatı vardır. 'Buzağıya tapmanız, nankörlük etmeniz, Musa'ya asi olmanız' diye tek tek saymak yerine sadece 'Min ba'di zâlik' diyerek, dinleyicinin zihninde o suçun büyüklüğünü devasa bir paket halinde hissettirir. 'Lealleküm teşkurûn' ile de suçluya bir 'kredi (ikinci şans)' tanındığı ifade edilir.",
+      "10_fonetik_ve_akustik_analiz": "51. ayetteki 'İttehaztümül İcl' gibi sert/keskin harflerden sonra, bu ayetteki 'Afevnâ' ve 'Teşkurûn' kelimelerindeki Fâ (ف), Vav (و) ve Şın (ش) harflerinin nefesli ve akıcı yapısı; öfkenin dindiğini, cezalandırma geriliminin yerini merhametli ve yumuşak bir rüzgar esintisine (affetmeye) bıraktığını akustik olarak modeller.",
+      "11_tematik_capraz_okuma": "A'râf 153. ayet bu affın psikolojik altyapısını açıklar: 'Kötülükleri işleyip de sonra ardından tövbe edenler ve iman edenler bilsinler ki, Rabbin elbette çok bağışlayıcıdır.' Af, otomatik bir mekanizma değil, tövbenin reaksiyonudur.",
+      "12_klasik_tefsir_perspektifi": "Müfessir İbn Aşur: 'Allah'ın affetmesindeki amaç şükürdür. Çünkü affedilen suçlu (psikolojik olarak) kendisine bu iyiliği yapana minnet duyar ve bir daha o hataya dönmemek için bağlanır (şükreder).' Zemahşerî ise Afv kelimesini şöyle açar: 'Allah onların cezasını ertelemekle kalmadı, günahın varlık izini bile sildi. Çünkü cezayı ertelemek sabırdır, izi silmek ise affetmektir.'",
+      "13_ontolojik_ve_metafizik_okuma": "Onarımın (Repair) ve İkinci Şansın Ontolojisi. İnsan, kendi kendine yeterli veya kusursuz bir varlık değildir. Yeryüzü macerası, 'Hata yapma ve Affedilme' diyalektiği üzerine kuruludur. Mutlak olan sadece Allah'tır. İnsanın en büyük suçu (Şirk) işlediğinde bile evrenin sisteminden kalıcı olarak atılmaması (Delete edilmemesi), Evrensel Bilincin (Yaratıcının) 'Ceza/Yıkım' üzerine değil, 'Merhamet/Yapım' üzerine kurgulandığının metafiziksel kanıtıdır.",
+      "14_hukuki_ve_ahlaki_cikarimlar": "Rehabilitasyon ve Şükür Ahlakı. Hukuk sistemlerinde 'Af' kavramının (Amnesty) meşruiyet zeminidir. Cezalandırmanın temel amacı intikam almak (ödeşmek) değil, suçluyu rehabilite edip tekrar sağlıklı bir fıtrata (şükreden bir bilince) döndürmektir. İlahi ahlak, düşene son tekmeyi vurmayı değil, elinden tutup 'Şükür/Farkındalık' sahasına çekmeyi emreder.",
+      "15_cagdas_izdusum": "Çağdaş dünyadaki 'İptal Kültürü' (Cancel Culture) ve 'Linç Psikolojisine' karşı bir ahlak manifestosudur. Modern toplum, bir hata yapanı anında dijital veya sosyal olarak aforoz edip (yok edip) ona bir daha asla şans tanımazken; Yaratıcı, en büyük ihaneti (Altın Buzağı şirki) bile silecek (Afv) kadar derin bir merhamet sistemini işletmektedir. Kur'an, linçi değil 'Onarımı ve Geri Kazanımı' (Rehabilitasyonu) merkeze alır."
+    }
+  },
+  {
+    "sure_no": 2,
+    "sure_adi": "Bakara",
+    "ayet_no": 53,
+    "cuz_no": 1,
+    "analiz_modeli": {
+      "1_orijinal_metin_ve_meal": {
+        "arapca": "وَإِذْ آتَيْنَا مُوسَى الْكِتَابَ وَالْفُرْقَانَ لَعَلَّكُمْ تَهْتَدُونَ",
+        "meal_diyanet": "Hani, doğru yolu bulasınız diye Mûsâ’ya Kitab'ı ve Furkân'ı (hak ile batılı ayıran ölçüyü) vermiştik."
+      },
+      "2_lafzi_ceviri": {
+        "وَإِذْ": "Ve hani",
+        "آتَيْنَا": "Biz vermiştik / bahşetmiştik",
+        "مُوسَى": "Musa'ya",
+        "الْكِتَابَ": "Kitabı (Tevrat'ı)",
+        "وَالْفُرْقَانَ": "Ve Furkan'ı (hakkı batıldan ayırma kriterini)",
+        "لَعَلَّكُمْ": "Umulur ki siz / -meniz için",
+        "تَهْتَدُونَ": "Hidayete erersiniz / doğru yolu bulursunuz"
+      },
+      "3_morfolojik_ve_sentaktik_cozumleme": "'Âteynâ' (Biz verdik), İf'al babındandır; sadece eline tutuşturmak değil, onun içine nüfuz edecek şekilde, ikram ve lütufla bağışlamak demektir. Cümlenin nesneleri 'El-Kitâbe' ve 'Ve'l-Furkân'dır. İki farklı kelime 'Vav' atıf harfiyle bağlanmıştır. Bu gramer yapısı, ikisinin de ayrı şeyler mi olduğu (Tevrat ve Mucizeler gibi), yoksa aynı şeyin farklı iki ismi mi olduğu (Tevrat'ın bir özelliği olarak Furkan) şeklinde tefsirde büyük tartışmalara kapı aralar (Atf-ı Tefsîrî). 'Lealleküm tehtedûn' cümlesi de yine 52'deki gibi eylemin teleolojik hedefini (Niçin verildi? Hidayet için) koyar.",
+      "4_kiraat_farkliliklari": "Okunuşta anlamı değiştiren bir unsur yoktur. 'Âteynâ'daki med (uzatma) ve Furkan'daki tok okuyuş, o hukukun/kitabın omuzlara yüklediği ciddiyeti sese yansıtır.",
+      "5_etimolojik_cozumleme_ve_cahiliye_referanslari": "'Kitab' (K-T-B); dağınık şeyleri bir araya toplayıp yazmak, düzene koymak, yasa/kanun haline getirmek demektir. 'Furkan' (F-R-K) kelimesi çok kritiktir; sabahın karanlığı yarıp (fecr) aydınlığı ayırması gibi, birbiri içine geçmiş, karışmış iki şeyi bıçak gibi kesip birbirinden ayırt eden (Hak ile Batıl, Doğru ile Yanlış, Helal ile Haram) turnusol kağıdı / kriter demektir. İsrailoğullarının zihni buzağı (batıl) ile tevhid (hak) arasında bulanmıştı; onlara zihni netleştirecek bir 'Furkan' lazımdı.",
+      "6_kuran_ici_kavram_agi": "Furkan kelimesi Kur'an'da; kitapların genel vasfı olarak, Bedir savaşı için (Enfal 41 - Yevme'l-Furkan), Kur'an'ın kendisi için (Furkan 1) ve insandaki takva bilinci için (Enfal 29) kullanılır. Yani Furkan sadece sayfalar değil; kişinin içinde oluşan 'Ahlaki Ayırt Etme Refleksidir'.",
+      "7_esbab_i_nuzul_ve_tarihsel_baglam": "İsrailoğulları kölelikten yeni çıkmış, cahil, psikolojisi alt üst olmuş (Stockholm sendromlu) ve paganizmle kirlenmiş bir topluluktu (Buzağı olayı bunu kanıtladı). Bir toplumu sadece fiziksel olarak (denizi yararak) Firavun'dan kurtarmak yetmezdi; asıl zihinlerindeki 'Firavunu' söküp atacak bir Yasaya, Anayasaya ve Etik sisteme ihtiyaçları vardı. Allah, onların bu sosyolojik boşluğunu doldurmak için Hz. Musa'ya (Tur dağında) Kitab'ı (On Emir) indirdi.",
+      "8_siyak_ve_sibak_baglam": {
+        "onceki_ayetler": "2/51-52: Buzağı sapkınlığı ve ilahi af.",
+        "sonraki_ayetler": "2/54: Musa'nın kavmine kızıp 'Nefislerinizi öldürün/tövbe edin' demesi.",
+        "baglam_analizi": "52. ayetteki 'Affetme' eylemi, kulun başıboş bırakılması demek değildi. Suçluyu hapisten (ceza almaktan) kurtarırsınız, ama eline nasıl yaşayacağına dair bir rehber vermezseniz tekrar suç işler. İşte 53. ayette, affedilen kavmin bir daha altın buzağılara (şirke) düşmemesi, zihinlerinin netleşmesi için ellerine bir 'Hukuk ve Kriter' (Kitap ve Furkan) verilir. Kurtuluşun ve affın sürdürülebilirliği, Hukuka (Kitaba) bağlanmıştır."
+      },
+      "9_belagat_ve_edebi_nazim": "'Kitap ve Furkan' denilmesi 'Atf-ı Hâs ale'l-Âm' (Genelin üzerine özelin atfedilmesi) sanatıdır. Kitap genel anayasadır, Furkan ise onun içindeki 'Ayırt edici, keskin ve kritik hükümlerdir'. Yani onlara sadece okunacak bir metin (Kitap) değil, pratik hayatta karar verirken kullanacakları keskin bir zeka/ölçü (Furkan) bahşedilmiştir.",
+      "10_fonetik_ve_akustik_analiz": "'El-Kitâbe ve'l-Furkân' ibaresindeki Râ (ر) ve Kâf (ق) harflerinin kalın, gür ve keskin çıkışı (Kalkale/İsti'la), o inen anayasanın (On Emir'in/Levhaların) sarsılmaz, otoriter ve parçalayıcı (yanlışı kesip atan) ağırlığını kulaklarda çınlatır.",
+      "11_tematik_capraz_okuma": "Enbiyâ Suresi 48: 'Andolsun biz Musa'ya ve Harun'a Furkan'ı (Hakkı batıldan ayıranı), takva sahipleri için bir ışık (ziyâ) ve zikir olarak verdik.' Bu ayet, Furkan'ın sadece yasa değil, zihinsel bir ışık/aydınlanma olduğunu çaprazlar.",
+      "12_klasik_tefsir_perspektifi": "Müfessir İbn Abbas ve Mücahid: 'Furkan, denizin yarılması mucizesidir, çünkü haklıyı ve haksızı o deniz ayırmıştır' derler. Fakat Fahreddin er-Râzî buna katılmaz ve der ki: 'Kitap Tevrat'tır, Furkan ise Tevrat'ın içindeki Helal ve Haramı ayıran ilahi hükümdür (Şeriattır). Çünkü hidayet bulmaları mucizeyle değil, Şeriata uymakla olur.'",
+      "13_ontolojik_ve_metafizik_okuma": "Kozmos ve Nomos (Yasa) ilişkisi. İnsan zihni doğası gereği kaotiktir (gri alanlarla doludur). Nereden geldiğini ve neyin doğru olduğunu kendi başına kesin olarak bilemez. 'Furkan', insanın bu ontolojik karanlığına dışarıdan (Aşkın olandan) müdahale eden bir 'Lazer Işını' gibidir. Siyah ile beyazı, Adalet ile Zulmü ayırarak insana yeryüzünde bir 'Kavramsal Temel' (Grounding) inşa eder. Hukuk/Yasa olmadan, toplum ontolojik olarak çürür.",
+      "14_hukuki_ve_ahlaki_cikarimlar": "Kanun Hakimiyeti ve Kriter Ahlakı. Hukuksuz bir özgürlük, kaostur. İsrailoğulları kölelikten kurtulup özgürleştiklerinde ilk yaptıkları şey bir 'Buzağıya' tapmak oldu. Bu, sınırları belirlenmemiş bir özgürlüğün (Furkansız aklın) yozlaşacağını gösterir. Ayet ahlaken bize, hayatın her alanında (ticarette, siyasette, ailede) doğruyu yanlıştan ayıran evrensel bir 'Kriterimizin' (Furkanımızın) olması gerektiğini şart koşar.",
+      "15_cagdas_izdusum": "Post-modernizmin 'Her şey görecelidir (Relativizm), mutlak doğru yoktur, herkesin gerçeği kendine' şeklindeki gri/akışkan ahlak felsefesinin tam zıddıdır. Kur'an, doğru ve yanlışın (Hak ve Batıl) kişinin keyfine, çıkarlarına veya toplumun çoğunluğuna (buzağıya tapan kitleye) göre belirlenemeyeceğini; insanın ve medeniyetin ayakta kalabilmesi için sağlam, ilahi ve nesnel bir ölçüye/teraziye (Furkan'a) ihtiyaç duyduğunu çağdaş zihinlere sarsıcı bir şekilde hatırlatır."
+    }
+  }
+]
