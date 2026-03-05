@@ -1,1 +1,47 @@
-
+[
+  {
+  "sure_no": 2,
+  "sure_adi": "Bakara",
+  "ayet_no": 101,
+  "cuz_no": 1,
+  "analiz_modeli": {
+    "1_orijinal_metin_ve_meal": {
+      "arapca": "وَلَمَّا جَاءَهُمْ رَسُولٌ مِّنْ عِندِ اللَّهِ مُصَدِّقٌ لِّمَا مَعَهُمْ نَبَذَ فَرِيقٌ مِّنَ الَّذِينَ أُوتُوا الْكِتَابَ كِتَابَ اللَّهِ وَرَاءَ ظُهُورِهِمْ كَأَنَّهُمْ لَا يَعْلَمُونَ",
+      "meal_diyanet": "Onlara, Allah katından ellerinde bulunanı (Tevrat’ı) doğrulayıcı bir peygamber gelince, kendilerine kitap verilenlerden bir kısmı, sanki gerçeği hiç bilmiyorlarmış gibi Allah’ın kitabını arkalarına attılar."
+    },
+    "2_lafzi_ceviri": {
+      "وَلَمَّا": "Ve ne zaman ki / dığında",
+      "جَاءَهُمْ": "Onlara geldi",
+      "رَسُولٌ": "Bir elçi",
+      "مِّنْ عِندِ اللَّهِ": "Allah katından",
+      "مُصَدِّقٌ": "Doğrulayıcı olarak",
+      "لِّمَا مَعَهُمْ": "Onların beraberinde (yanlarında) olanı",
+      "نَبَذَ": "Fırlatıp attı / bozdu",
+      "فَرِيقٌ": "Bir fırka / grup",
+      "مِّنَ الَّذِينَ": "O kimselerden ki",
+      "أُوتُوا الْكِتَابَ": "Kendilerine kitap verilen(lerden)",
+      "كِتَابَ اللَّهِ": "Allah'ın kitabını",
+      "وَرَاءَ ظُهُورِهِمْ": "Sırtlarının arkasına",
+      "كَأَنَّهُمْ": "Sanki onlar",
+      "لَا يَعْلَمُونَ": "Bilmiyorlarmış gibi"
+    },
+    "3_morfolojik_ve_sentaktik_cozumleme": "'Lemmâ' (لَمَّا) zaman zarfı ve şart edatıdır, 'olduğu zaman' anlamı katar ve cevabını 'nebeze' (fırlatıp attı) mazi fiilinde bulur. 'Musaddikun' (مُصَدِّقٌ) ism-i faildir ve hal olarak irab edilir; elçinin gelişindeki ontolojik tutarlılığı, yani önceki mesajları yıkıcı değil, kurucu ve tasdik edici bir misyonla geldiğini gösterir. 'Ke-enne-hüm' (كَأَنَّهُمْ) benzetme (teşbih) edatıdır ve cümleye 'sanki öylelermiş gibi (ama aslında öyle değiller)' şeklinde güçlü bir psikolojik ironi katar.",
+    "4_kiraat_farkliliklari": "Kıraat imamları arasında metnin temel iskeletini değiştiren majör bir ihtilaf yoktur. 'Zuhûrihim' (sırtları) kelimesinin okunmasında klasik lehçe varyasyonları ve med (uzatma) farklılıkları dışında, anlamı farklı bir yöne çekecek bir okuma bulunmamaktadır.",
+    "5_etimolojik_cozumleme_ve_cahiliye_referanslari": "Bir önceki ayetteki 'Nebeze' (N-B-Z) fiili burada da karşımıza çıkar; değersiz ve çöp sayarak fırlatıp atmak demektir. 'Zahr' (Z-H-R) kelimesinin çoğulu olan 'Zuhûr' sırtlar demektir. Cahiliye kültüründe bir şeyi 'sırtın arkasına atmak' (verâe zuhûrihim), o şeye bir daha asla dönüp bakmamak, onu kasıtlı olarak unutmak, hayatın ve gündemin tamamen dışına itmek anlamına gelen çok ağır bir bedevi deyimidir.",
+    "6_kuran_ici_kavram_agi": "Bu ayet; Bakara 89 ('Kendilerine beraberlerindekini tasdik eden bir kitap gelip de, bildikleri o gerçek karşılarına çıkınca onu inkar ettiler'), Âl-i İmrân 187 ('O kitabı arkalarına attılar ve onu az bir değere sattılar') ve Saff 6 (İsa'nın kendinden sonra gelecek olan Ahmed'i müjdelemesi) ayetleriyle teolojik bir blok oluşturur. Kur'an'ın 'Kitabı Gizleme' (Kitman) ve 'Tahrif' kavramlarının zirvesidir.",
+    "7_esbab_i_nuzul_ve_tarihsel_baglam": {
+      "onceki": "2/100: Yahudilerin her defasında yaptıkları toplumsal ve diplomatik antlaşmaları fütursuzca çöpe atmaları.",
+      "sonraki": "2/102: Allah'ın kitabını çöpe atanların, oluşan bu devasa boşluğu neyle dolduracaklarının cevabı: Süleyman'ın mülkü aleyhine şeytanların (sihirbazların) okudukları uydurma metinlere uymaları.",
+      "baglam_analizi": "Medine'deki Yahudi din bilginleri, Hz. Muhammed gelmeden önce Arap kabilelerine (Evs ve Hazrec) 'Yakında beklediğimiz peygamber gelecek ve onunla birlikte sizi ezeceğiz' diyorlardı. Ancak peygamber İsrailoğulları'ndan değil de Araplar'dan (İsmail soyundan) gelince, sırf ırkçı bir kıskançlık yüzünden Tevrat'ta yazan o peygamberin sıfatlarını gizlediler ve bizzat kendi inandıkları Tevrat'ı (Allah'ın kitabını) arkalarına attılar."
+    },
+    "8_siyak_ve_sibak_baglam": "Diplomatik ahdi bozan (100. ayet) zihniyetin, işi ontolojik boyuta taşıyıp kendi kutsal kitaplarını (Tevrat'ı) da nasıl harcadığını izleriz. Siyak-sibak ilişkisi muazzam bir çöküşü anlatır: İnsanlarla yapılan sosyal sözleşmeyi (Medine vesikasını) tanımayan bir toplumun, zaten Allah ile yaptığı metafizik sözleşmeyi (Kitabı) çoktan sırtının arkasına fırlatmış olduğu gerçeği gözler önüne serilir.",
+    "9_belagat_ve_edebi_nazim": "'Kitaballah verae zuhurihim' ibaresinde muazzam bir 'Kinaye' ve 'İstiare-i Temsiliyye' sanatı vardır. Kitabı fiziksel olarak alıp arkalarına fırlatmamışlardır; bu ifade, emirlerini hiçe saymayı, hükümlerini geçersiz kılmayı sembolize eden kinayeli bir görsel şölendir. 'Ke'ennehum la ya'lemun' (Sanki bilmiyorlarmış gibi) ifadesinde ise 'Tecâhül-i Ârif' (Bilip de bilmezden gelme) sanatının en trajik hali sergilenir.",
+    "10_fonetik_ve_akustik_analiz": "'Verae zuhurihim' (وَرَاءَ ظُهُورِهِمْ) derken, 'Râ', kalın 'Zı' (ظ) ve derinden gelen 'Hâ' (ه) harflerinin birleşimi; ağır, kütleli ve rahatsız edici bir nesnenin arkaya doğru kasıtlı, umursamaz ve kaba bir kuvvetle savrulmasının fonetik ritmini verir. Cümlenin 'la ya'lemun' (bilmiyorlar) nidasıyla sönümlenmesi, bu kaba eylemin üzerine çekilen sahte bir masumiyet (cehalet) perdesinin sessizliğini yansıtır.",
+    "11_tematik_capraz_okuma": "Bakara 93'teki 'Khuzû mâ âteynâkum bi-kuvvetin' (Size verdiğimiz kitaba sımsıkı sarılın) ilahi emriyle taban tabana zıttır. Orada kitaba 'sımsıkı tutunma' ideali varken, burada kitabı 'arkaya fırlatma' eylemi (nebeze) vardır. İki ayet birbiriyle çaprazlandığında, ilahi emaneti taşıma liyakati ile o emanete ihanet etme pratikleri arasındaki uçurum görünür.",
+    "12_klasik_tefsir_perspektifi": "Müfessir İbn Kesîr, bu fırlatıp atmanın sebebini 'Hased' (kıskançlık) olarak açıklar; gerçeği biliyorlardı ama hakikat kendi tekellerinden çıkıp başkasına (Araplara) gittiği için hasetlerinden gerçeği inkar ettiler. Zemahşerî ise, 'Allah'ın kitabı' tamlamasındaki inceliğe dikkat çeker: Attıkları şey sıradan bir nesne değil, bizzat inandıklarını iddia ettikleri Yaratıcı'nın anayasasıdır, bu yüzden suçun boyutu ontolojik bir ihanettir.",
+    "13_ontolojik_ve_metafizik_okuma": "Hakikatin 'Bilinçli İnkarı' (Cognitive Dissonance / Bilişsel Çelişki). İnsanın en büyük trajedisi, bilgisizlik değil, 'bilgiyi yönetme' ahlaksızlığıdır. Hakikatin kendi konforunu, statüsünü veya ırksal/ideolojik kibrini tehdit ettiğini gören insan, ontolojik bir körleşme yaşar. Kendi kutsalını bile kendi eliyle yok etme (arkaya atma) pahasına, o gerçeği (yeni peygamberi) reddeder. Bu, gerçeğin ağırlığına dayanamayan nefsin geliştirdiği patolojik bir savunma mekanizmasıdır.",
+    "14_hukuki_ve_ahlaki_cikarimlar": "Entelektüel İhanet ve Delil Karartma Suçu. Hukuken bu ayet, gerçeği bilmesine rağmen şahitliği gizleyen, delilleri (kitabın hükümlerini) çıkarları uğruna yok sayan 'bilinçli cahillerin' ahlaki çöküşünü mahkûm eder. Ahlaki olarak ise şu ilkeyi koyar: Cehalet bir mazeret olabilir, ancak gerçeği 'sanki bilmiyormuş gibi' (ke'ennehum la ya'lemun) rol yaparak gizlemek, varoluşsal bir sahtekarlıktır ve hukuki liyakati (şahitlik vasfını) tamamen bitirir.",
+    "15_cagdas_izdusum": "Ayet, post-truth (hakikat ötesi) çağının ve modern algı yönetiminin tam bir deşifresidir. Bugün uluslararası kurumlar, siyasetçiler, bilim insanları veya akademisyenler, dünyanın gözü önünde duran apaçık iklim krizini, adaletsizlikleri, soykırımları veya ekonomik sömürüyü bildikleri halde; siyasi ve finansal menfaatleri uğruna bu gerçekleri 'sırtlarının arkasına fırlatmakta' ve kameralar karşısında 'sanki hiç bilmiyorlarmış gibi' arsızca rol yapmaktadırlar. Modern insanın en büyük kurnazlığı, bilerek inşa ettiği bu sahte cehalet illüzyonudur."
+  }
+}
+]
