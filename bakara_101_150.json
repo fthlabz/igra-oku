@@ -637,8 +637,87 @@
     "14_hukuki_ve_ahlaki_cikarimlar": "Din ve Vicdan Özgürlüğünün Mimari Garantisi. Hukuken, ibadethanelerin inşası, korunması ve açık tutulması dokunulmaz bir haktır. Hangi bahaneyle olursa olsun (politik, ırksal veya şovenist), bir mescidin kapısına kilit vurmak, içindeki zikri (eğitimi/ibadeti) yasaklamak veya onu başka bir amaca tahsis etmek İslam hukukunda en büyük 'Zulüm' kategorisindedir. Ahlaki olarak ise, mekanların fiziki varlığından ziyade, içlerindeki 'Zikrullah'ın (hakikatin ve adaletin sesinin) yaşatılması esas alınmıştır.",
     "15_cagdas_izdusum": "Bu ayet, çağdaş dünyadaki Sistematik İbadethane Kıyımlarının (Cultural Genocide) ilahi bir iddianamesidir. Doğu Türkistan'da camilerin yıkılıp otoparka veya eğlence merkezlerine çevrilmesi, Gazze'de tarihi ve modern mescitlerin bombardımanla harabeye dönüştürülmesi, Hindistan'da Babür Camii'nin yıkılması veya Avrupa'da İslamofobik saldırılarla mescitlerin kapatılması teşebbüsleri, ayetteki 'se'â fî harâbihâ' (yıkılması için çabalama) eyleminin bugünkü kusursuz yansımalarıdır. Kur'an, bu modern zalimlere sonlarının küresel bir 'Zillet' (khizy) olacağını müjdeler."
   }
+},
+  {
+  "sure_no": 2,
+  "sure_adi": "Bakara",
+  "ayet_no": 115,
+  "cuz_no": 1,
+  "analiz_modeli": {
+    "1_orijinal_metin_ve_meal": {
+      "arapca": "وَلِلَّهِ الْمَشْرِقُ وَالْمَغْرِبُ ۚ فَأَيْنَمَا تُوَلُّوا فَثَمَّ وَجْهُ اللَّهِ ۚ إِنَّ اللَّهَ وَاسِعٌ عَلِيمٌ",
+      "meal_diyanet": "Doğu da Batı da (tüm yeryüzü) Allah'ındır. Nereye dönerseniz Allah'ın yüzü (zâtı, kıblesi) oradadır. Şüphesiz Allah, lütfu ve rahmeti geniş olandır, her şeyi hakkıyla bilendir."
+    },
+    "2_lafzi_ceviri": {
+      "وَلِلَّهِ": "Ve Allah'ındır (Sadece O'na aittir)",
+      "الْمَشْرِقُ": "Doğu",
+      "وَالْمَغْرِبُ": "Ve Batı",
+      "فَأَيْنَمَا": "Artık her nereye",
+      "تُوَلُّوا": "Dönerseniz / yönelirseniz",
+      "فَثَمَّ": "İşte oradadır",
+      "وَجْهُ اللَّهِ": "Allah'ın vechi (yüzü/yönü)",
+      "إِنَّ اللَّهَ": "Şüphesiz Allah",
+      "وَاسِعٌ": "Vâsi'dir (kuşatıcı/geniş olandır)",
+      "عَلِيمٌ": "Alîm'dir (hakkıyla bilendir)"
+    },
+    "3_morfolojik_ve_sentaktik_cozumleme": "'Ve-lillâhi' (وَلِلَّهِ) ifadesinde car-mecrur öne alınarak (takdim) hasr (vurgu/tekel) yapılmıştır; yani doğu ve batı 'başkasına değil, bütünüyle Allah'a aittir'. 'Fe-eynemâ' (فَأَيْنَمَا) mekan ve şart bildiren bileşik bir zarftır ve cevabı 'fe-semme' (فَثَمَّ - işte orada) ile gelir. 'Semme' işaret zarfıdır, mekanı işaret eder ancak Allah'ın zâtına mekan isnat etmez, yönelinen ontolojik hedefi imler. 'Vâsi'un' (وَاسِعٌ) ism-i fâildir, ilahi lütfun, kudretin ve ilmin mekan sınırlarını aşan mutlak kuşatıcılığını sentaktik bir genişlikle ifade eder.",
+    "4_kiraat_farkliliklari": "Ayetin kıraatinde majör bir ihtilaf yoktur. 'Tüvellû' (تُوَلُّوا) fiilinin okunuşunda bazı nadir kıraatlerde şeddeli ve şeddesiz fonetik nüanslar bulunsa da anlam aynı kalır. Ayet sonundaki 'Vâsi'un Alîm' (وَاسِعٌ عَلِيمٌ) geçişinde, izhar (net okuyuş) kuralı uygulanarak Allah'ın sonsuzluğu (Vâsi) ile mutlak bilgisi (Alîm) kelimeleri pürüzsüzce birbirine bağlanır.",
+    "5_etimolojik_cozumleme_ve_cahiliye_referanslari": "'Meşrik' (Ş-R-K) güneşin doğduğu (ışığın yarıldığı) yer, 'Mağrib' (Ğ-R-B) ise güneşin battığı, kaybolduğu ve gurbete gittiği yer demektir. Bu iki kelime, kadim aklın mekanı kavrama biçimidir; tüm coğrafyayı ve evreni kapsar. 'Vech' (W-J-H) kelimesi yüz, zât, yön, gaye ve rıza anlamlarına gelir. Cahiliye putperestliğinde ilahlar sadece tapınakların (mabetlerin) içine veya putların yüzüne hapsedilmişti; bu ayet Tanrı'yı fiziksel lokalizasyondan kurtarıp evrenselleştirmiştir.",
+    "6_kuran_ici_kavram_agi": "Bu ayet, Kıble değişimi ayetlerinin (Bakara 142-144) teolojik felsefesidir. Bakara 177'deki 'İyilik/Birr, yüzlerinizi doğuya ve batıya çevirmeniz değildir...' vurgusuyla aynı eksendedir. Ayrıca Kaf Suresi 16 ('Biz ona şah damarından daha yakınız') ve Hadîd 4 ('Nerede olursanız olun O sizinle beraberdir') ayetleriyle ontolojik olarak ilahi kuşatıcılık (ihâta) ağını tamamlar.",
+    "7_esbab_i_nuzul_ve_tarihsel_baglam": {
+      "onceki_ayetler": "2/114: Mescitlerin tahrip edilmesi, ibadethanelerin yıkılması ve Allah'ın adının anılmasının zalimlerce yasaklanması.",
+      "sonraki_ayetler": "2/116: 'Allah çocuk edindi' iftirasına karşı, göklerdeki ve yerdeki her şeyin O'na boyun eğdiği hakikati.",
+      "baglam_analizi": "Ayetin iniş sebebi hakkında üç güçlü rivayet vardır: 1) 114. ayetteki mescit yıkımına tepkidir. Mescid-i Aksa veya Mescid-i Haram zalimlerce kapatılsa bile, inanan kalpler için bütün yeryüzü mescittir. 2) Gece karanlıkta yolculuk ederken kıbleyi bulamayıp farklı yönlere namaz kılan sahabeye ruhsattır. 3) Kıblenin Kudüs'ten Mekke'ye dönmesine itiraz eden Yahudilere felsefi bir cevaptır: Mekanların kendiliğinden bir kutsallığı yoktur, kutsiyet Allah'ın emrine (vechine) dönmekle başlar."
+    },
+    "8_siyak_ve_sibak_baglam": "Mescitlerin zalimler tarafından yıkılması (114) bağlamından hemen sonra yeryüzünün tamamının Allah'a ait olduğunun (115) ilanı muazzam bir siyak-sibak şaheseridir. 'Siz fiziki mekanları kapatsanız ne olur? İman eden biri çölün ortasında veya denizin üzerinde de Allah'ın rızasına (vechine) ulaşabilir.' Sibaktaki (116) 'Çocuk edindi' yalanının çürütülmesiyle de, Allah'a mekan isnat etme hastalığının O'na soy/cisim isnat etme hastalığıyla aynı primitif kafa yapısından doğduğu gösterilir.",
+    "9_belagat_ve_edebi_nazim": "'Meşrik ve Mağrib' kelimelerinde kusursuz bir 'Tıbâk' (Zıtlık) ve 'Mecaz-ı Mürsel' vardır; iki uç nokta anılarak 'bütün bir evren ve uzay' kastedilmiştir (Zikr-i cüz, irade-i kül). 'Vechullah' (Allah'ın yüzü) tamlamasında 'Müşâkele' ve 'Mecâz' sanatları bulunur; zira Allah'ın organı (yüzü) yoktur, burada kastedilen O'nun 'Rızası, Yönü, Zâtı veya Kıblesi'dir. Bu, insan zihninin hakikati kavrayabilmesi için kullanılan ilahi bir tensîk (düzenleme) sanatıdır.",
+    "10_fonetik_ve_akustik_analiz": "'Meşrik' kelimesindeki 'Şın' harfinin yayılışı ile 'Mağrib' kelimesindeki 'Ğayn' harfinin boğukluğu, gündüzün doğuşunu ve gecenin karanlığa gömülüşünü akustik olarak sembolize eder. 'Vâsi'un Alîm' kelimeleri okunurken dudakların genişlemesi ve genizden gelen tını, ilahi ihâtanın (kuşatıcılığın) mekansal sınırları yıkan sonsuzluğunu zihinde canlandırır.",
+    "11_tematik_capraz_okuma": "Panteizm (Tümtanrıcılık) ve Panenteizm felsefeleriyle teolojik diyalektik. Panteizm evreni doğrudan Tanrı sayarken, bu ayet 'Evren (doğu ve batı) Allah'ındır (Lillah)' diyerek araya sahiplik (malikiyet) mesafesi koyar ve aşkınlığı korur. Ancak 'Nereye dönerseniz vechi oradadır' diyerek Deizmin 'uzak/soğuk Tanrı' fikrini de yıkar. İslami ontolojideki bu denge; hem mutlak Aşkınlığı (Transcendence) hem de mutlak İçkinliği / Kuşatıcılığı (Immanence/İhâta) aynı potada eritir.",
+    "12_klasik_tefsir_perspektifi": "Mücessime ve Müşebbihe (Allah'ı cisimleştiren ve insana benzeten sapkın fırkalar) bu ayetteki 'Vech' kelimesine takılarak Allah'a fiziksel bir yüz isnat etmeye çalışmışlardır. Ancak Ehl-i Sünnet alimleri (Fahreddin er-Râzî, Zemahşerî, Maturidi) bunu şiddetle reddederek 'Vechullah' ifadesinin 'Allah'ın rızası', 'Allah'ın belirlediği yön (kıble)' veya 'Allah'ın Zâtı' anlamında bir mecaz olduğunu kati delillerle ispatlamışlardır. Râzî, 'Vâsi' isminin mekana değil, Allah'ın lütfunun kapasitesine işaret ettiğini belirtir.",
+    "13_ontolojik_ve_metafizik_okuma": "Kutsalın Mekansızlılaştırılması (De-localization of the Sacred). Ontolojik olarak mekan, yaratılmış ve sınırlı bir boyuttur. Mutlak varlık (Vacib-ül Vücud) bir kaba (mekana) giremez, ancak o kabı bütünüyle ihata eder. İnsanlık tarihi boyunca Tanrı heykellere, dağlara veya tapınaklara (Lokal Kutsallık) hapsedilmişti. Bakara 115, bu mekansal putperestliği paramparça eder. İnsan yeryüzünün neresinde olursa olsun, hangi yöne dönerse dönsün, Mutlak Olan'ın huzurundadır. Evren bütünüyle ontolojik bir mescittir.",
+    "14_hukuki_ve_ahlaki_cikarimlar": "Fıkhî Esneklik ve İbadet Felsefesi. Hukuken (Fıkıh), bu ayet 'Kıbleyi bulamayanın (taharri yapıp) kıldığı yönün kıble kabul edilmesi' ve 'Yolculuk halindeyken (binek üzerinde) nafile namazların gidilen yöne doğru kılınabilmesi' gibi çok büyük kolaylıklar (ruhsat) getirmiştir. Ahlaki açıdan ise muazzam bir vicdan yasası koyar: Yalnızca mescitte değil, işyerinde, sokakta, yalnızken veya kalabalıktayken 'nereye dönerseniz O'nun vechi oradadır' şuuruyla hareket etmek (İhsan makamı), evrensel ahlakın garantisidir.",
+    "15_cagdas_izdusum": "Ayet, seküler modernitenin hayatı 'dini ve dünyevi' (kutsal ve profan) mekanlar olarak ikiye bölme çabasına karşı ilahi bir manifestodur. Modern insan, Tanrı'yı haftada bir gün belli mabetlere kapatıp, pazar yerini, ekonomiyi, meclisi ve üniversiteyi (doğuyu ve batıyı) 'Tanrısız (seküler) alanlar' ilan etmiştir. Oysa bu ayet, 'Vechullah'ın (Allah'ın rızasının ve yasalarının) sadece caminin içinde değil, laboratuvarda, ticarette, siyasette ve uzayda (nereye dönerseniz dönün) geçici değil kalıcı olarak orada bulunduğunu haykıran çağdaş bir tevhid deklarasyonudur."
+  }
+},
+  {
+  "sure_no": 2,
+  "sure_adi": "Bakara",
+  "ayet_no": 116,
+  "cuz_no": 1,
+  "analiz_modeli": {
+    "1_orijinal_metin_ve_meal": {
+      "arapca": "وَقَالُوا اتَّخَذَ اللَّهُ وَلَدًا ۗ سُبْحَانَهُ ۖ بَل لَّهُ مَا فِي السَّمَاوَاتِ وَالْأَرْضِ ۖ كُلٌّ لَّهُ قَانِتُونَ",
+      "meal_diyanet": "Onlar, 'Allah çocuk edindi' dediler. O, bundan münezzehtir (yücedir). Aksine, göklerde ve yerde ne varsa hepsi O’nundur, hepsi O’na boyun eğmiştir."
+    },
+    "2_lafzi_ceviri": {
+      "وَقَالُوا": "Ve dediler ki",
+      "اتَّخَذَ اللَّهُ": "Allah edindi",
+      "وَلَدًا": "Bir çocuk (evlat)",
+      "سُبْحَانَهُ": "O bundan münezzehtir (yücedir/eksiklikten uzaktır)",
+      "بَل": "Bilakis / aksine (hayır)",
+      "لَّهُ": "Sadece O'nundur",
+      "مَا فِي": "İçinde olanlar (ne varsa)",
+      "السَّمَاوَاتِ": "Göklerde",
+      "وَالْأَرْضِ": "Ve yerde",
+      "كُلٌّ": "Hepsi (tamamı)",
+      "لَّهُ": "Sadece O'na",
+      "قَانِتُونَ": "Boyun eğenlerdir (itaat edenlerdir)"
+    },
+    "3_morfolojik_ve_sentaktik_cozumleme": "'İttehaze' (اتَّخَذَ) fiili ifti'al babındadır; bir şeyi bilinçli bir çaba ve arzuyla kendisi için 'edinmek, seçip almak' demektir. 'Subhânehu' (سُبْحَانَهُ) mef'ul-i mutlak olup, fiili gizli (Usebbihu subhânehu) bir tenzih cümlesidir. Ayetin tam ortasında bir şok nidası ve kesin bir ontolojik ret olarak gramatikal akışı keser. 'Bel' (بَل) idrab edatıdır, iddiayı tamamen iptal edip yeni ve zıt bir hakikate geçiş yapar. 'Küllün' (كُلٌّ) kelimesindeki tenvin, muzafun ileyhten ivazdır (yani 'Küllü şey'in' demektir). 'Kânitûn' (قَانِتُونَ) ism-i fâil çoğuludur; cansız varlıkları da kapsadığı halde akıllılara mahsus 'vav ve nun' (çoğul müzekker salim) ile gelmesi, evrendeki her zerrenin şuurlu bir varlık gibi Allah'ın yasalarına mutlak bir itaat içinde olduğunu sentaktik bir şaheserle gösterir.",
+    "4_kiraat_farkliliklari": "Ayetin başındaki 'Ve kâlû' (وَقَالُوا) lafzını Şam kurrâsından büyük imam İbn Âmir, başındaki atıf 'vav'ı olmadan doğrudan 'Kâlû' (قَالُوا) şeklinde okumuştur. Vav ile okuyuş (Cumhur kıraati) bu iddiayı önceki ayetlerdeki sapkınlık zincirine (mescitleri yıkma, yön tartışmaları) bağlarken; İbn Âmir'in vav'sız okuyuşu, bu 'çocuk edinme' iftirasının kendi başına ne kadar devasa ve dehşetli, bağımsız bir küfür (şirk) olduğunu vurgulayan kopuk (müstakil) bir başlangıç yapar.",
+    "5_etimolojik_cozumleme_ve_cahiliye_referanslari": "'Veled' (W-L-D) kelimesi sadece erkek çocuğu değil, her türlü biyolojik üremeyi/nesli kapsar. 'Subhân' (S-B-H) kökü, suda hızla yüzmek, uzaklaşmak demektir; Allah'ı insani vasıflardan ve noksanlıklardan fersah fersah uzak tutmak (Tenzih) manasına evrilmiştir. 'Kunut' (Q-N-T) ise sıradan bir itaat değil; sessiz, sürekli, içten ve mutlak bir boyun eğiş, varoluşsal bir hizalanma demektir. Cahiliye Arapları melekleri 'Allah'ın kızları' sayarak pagan bir teogoni (tanrıların üremesi mitolojisi) yaratmışlardı.",
+    "6_kuran_ici_kavram_agi": "Kur'an'ın en sarsılmaz ontolojik kolonlarından biridir. İhlas Suresi 3 ('Lem yelid ve lem yûled - Doğurmamış ve doğurulmamıştır') ve Meryem Suresi 88-91 ('Rahmân çocuk edindi dediler... Bu sözden dolayı neredeyse gökler çatlayacak, yer yarılacak ve dağlar yıkılıp düşecekti') ayetleriyle zirveye çıkan 'Tevhid-i Tenzihî' kavram ağının temel taşıdır. Evrenin Tanrı'nın 'ailesi' değil, 'mülkü' olduğu ilkesidir.",
+    "7_esbab_i_nuzul_ve_tarihsel_baglam": "Ayet, üç farklı inanç grubunun ortak antropomorfik (insan biçimci) sapmasına tek bir darbeyle cevap vermek üzere inmiştir: 1) 'Uzeyr Allah'ın oğludur' diyen Yahudi fırkaları, 2) 'İsa Allah'ın oğludur' diyerek teslis inancını (Baba-Oğul-Kutsal Ruh) kuran Hristiyanlar, 3) 'Melekler Allah'ın kızlarıdır' diyerek melekleri ilahın biyolojik uzantısı sayan Mekkeli müşrikler. Her üç grup da Yaratıcı'yı yarattıklarının seviyesine (biyolojik çoğalma yasasına) indirgemiştir.",
+    "8_siyak_ve_sibak_baglam": "Bir önceki ayette (115) Allah'ın uzamsal/mekansal sınırları ('Vâsi' ve 'Doğu-Batı'nın sahibi) aşıldığı ilan edilmişti. Siyak-sibak ilişkisi şudur: 115. ayette Tanrı'nın MEKANDAN münezzeh olduğu anlatılırken, 116. ayette BİYOLOJİDEN VE ZAMANDAN (üremekten/fânilikten) münezzeh olduğu ilan edilir. Sibakta (117) ise 'Gökleri ve yeri örneksiz yaratandır' (Bedî') denilerek, O'nun bir şeyi varetmek için üremeye değil, sadece 'Ol' (Kün) demeye ihtiyacı olduğu felsefi akışla tamamlanır.",
+    "9_belagat_ve_edebi_nazim": "'Subhânehu' ibaresi muazzam bir 'İ'tirâziyye' (Araya girme) sanatıdır. Şirk sözünün iğrençliği karşısında ayetin nefesi aniden kesilir, Allah kendi zatını anında temize çıkarır. Cümlenin sonundaki 'kânitûn' (قَانِتُونَ) kelimesinde 'İstiare-i Mekniyye' ve 'Teşhis' (Kişileştirme) vardır; göklerdeki yıldızlar, galaksiler, dağlar ve denizler, adeta şuurlu birer asker gibi ilahi iradenin önünde el pençe divan duran itaatkâr kullar (kânitûn) olarak resmedilmiştir.",
+    "10_fonetik_ve_akustik_analiz": "'İttehazellahu veledâ' (Allah çocuk edindi) iddiasının telaffuzundaki o gevşek, dünyevi ve asılsız tını, hemen peşinden gelen 'Subhâneh!' (سُبْحَانَهُ) kelimesindeki 'Hâ' harfinin derinden, sarsıcı ve şiddetli soluğuyla adeta bir kılıç darbesi gibi kesilir. Ayetin finalindeki 'Kânitûn' (قَانِتُونَ) kelimesinde Kaf harfinin tokluğu ve 'ÛN' meddi, bu devasa evrenin Yaratıcı'sına olan sessiz, bitmek bilmeyen ve ihtişamlı boyun eğişinin (kunutun) akustik yankısıdır.",
+    "11_tematik_capraz_okuma": "Yunan Mitolojisi (Teogoni) ve Hristiyan Teolojisi (Kristoloji) ile İslami Tevhid'in Ontolojik Çatışması. Mitolojilerde tanrılar evlenir, ürer, çocukları olur (Zeus, Apollo). Hristiyanlıkta İsa 'Logos' ve 'Oğul'dur. Bu düşüncelerin felsefi temeli, Tanrı'nın gücünü veya sevgisini evrene aktarmak için biyolojik/genetik bir aracıya (çocuğa) ihtiyaç duyduğu yanılgısıdır. Kur'an, Tanrı ile Evren arasındaki ilişkinin 'Baba-Oğul' (Genetik/Akrabalık) ilişkisi değil, 'Halik-Mahluk / Mâlik-Memlûk' (Yaratıcı-Yaratılan / Sahip-Köle) ilişkisi olduğunu kesin bir çizgiyle ayırır.",
+    "12_klasik_tefsir_perspektifi": "Fahreddin er-Râzî, 'çocuk edinme' kavramının mantıksal ve felsefi imkansızlığını maddeler halinde çürütür: Üreme (veled), ancak fâni (ölümlü) ve eksik varlıkların kendi soylarını devam ettirmek, yaşlılıkta yardım görmek veya yalnızlıklarını gidermek için başvurdukları bir ihtiyaçtır. Mutlak varlık (Vacibu'l Vücud) ise ebedidir, müstağnidir (hiçbir şeye muhtaç değildir). Zemahşerî, 'Göklerde ve yerde ne varsa O'nundur' ifadesinin, 'Mülk sahibi, kendi kölesini evlat edinemez' şeklindeki hukuki bir kuralı metafizik düzleme taşıdığını söyler.",
+    "13_ontolojik_ve_metafizik_okuma": "Zorunlu Varlık'ın (Vâcibu'l-Vücûd) Tekilliği ve Biyolojinin Reddi. İnsan aklı, anlama kapasitesini aşan Aşkın Varlığı (Tanrı'yı), kendi fâniliğine dair tecrübelerle (baba olmak, üremek, miras bırakmak) antropomorfize etmeye (insancıllaştırmaya) çalışır. Oysa ontolojik olarak bir varlığın 'çocuğu' olması demek, o çocuğun kendi ebeveyniyle aynı 'özden' (cevherden) kopmuş bir parça olması demektir. Tanrı, parçalanmaz (Samed) ve bölünmez bir bütündür. Evren O'ndan kopan bir parça değil, O'nun 'Yoktan var ettiği' bir eserdir. İtaat edenler (kânitûn), Tanrı'nın çocukları değil, sanat eserleridir.",
+    "14_hukuki_ve_ahlaki_cikarimlar": "İlahi Adalette 'Nepotizm' (Akraba Kayırmacılığı) İmkansızlığı. Hukuken ve ahlaken Tanrı'nın bir çocuğunun veya biyolojik bir ailesinin olması, ilahi adaleti kökünden yıkar. Çünkü evlat, babasının yanında diğer kullara karşı her zaman imtiyazlı ve dokunulmazdır. Kur'an, 'Tanrı'nın evlatları veya torpilli dostları (imtiyazlı ırklar) yoktur; sadece yasalarına uyan ve O'na boyun eğen (kânitûn) eşit kulları vardır' diyerek, evrensel ve mutlak bir hukuk anayasası kurar. Seçkinlik soydan değil, itaatten (takvadan) gelir.",
+    "15_cagdas_izdusum": "Ayet, günümüzdeki 'New Age' akımlarının, panteist eğilimlerin veya 'Hepimiz Tanrı'nın çocuklarıyız' şeklindeki modern seküler/hümanist retoriğin ontolojik bir düzeltmesidir. Kulağa hoş gelse de 'Tanrı'nın çocuğu' metaforu, Yaratıcı ile aramızdaki o devasa saygı, haşyet ve sorumluluk (kulluk/abd) mesafesini laubali bir 'ebeveyn-çocuk' rahatlığına indirgemektedir. Modern insan, hesap vereceği Mutlak bir Hükümdar yerine, her suçunu şefkatle affedecek sembolik bir 'Göksel Baba' figürü arzuladığı için bu şirke eğilimlidir. Ayet, bu romantik şirki yıkarak insanı gerçek konumuyla (muhtaç, boyun eğen bir kul/kânitûn) yüzleştirir."
+  }
 }
 ]
-
 
 
